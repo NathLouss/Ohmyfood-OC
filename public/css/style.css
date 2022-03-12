@@ -10,6 +10,12 @@
 header {
   text-align: center;
   padding: 20px;
+  /* desktop >> if screen is equal or more then*/
+}
+@media screen and (min-width: 426px) {
+  header {
+    text-align: initial;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
