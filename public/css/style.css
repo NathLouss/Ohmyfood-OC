@@ -4,7 +4,12 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -16,6 +21,19 @@ header {
   header {
     text-align: initial;
   }
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  background-color: #eaeaea;
+  padding: 20px;
+}
+form input {
+  border: none;
+  background-color: #eaeaea;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  background-color: #eaeaea;
+  padding: 20px;
+
+  input {
+    border: none;
+    background-color: #eaeaea;
+  }
+}
