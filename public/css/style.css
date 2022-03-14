@@ -45,4 +45,35 @@ form input {
   background-color: #eaeaea;
 }
 
+#banner {
+  background-color: #f6f6f6;
+  text-align: center;
+  height: 300px;
+  /* desktop >> if screen is equal or more then*/
+}
+@media screen and (min-width: 531px) {
+  #banner {
+    height: 230px;
+  }
+}
+#banner h1 {
+  font-family: "shrikland", sans-serif;
+  padding: 30px 75px 20px 75px;
+}
+#banner p {
+  font-size: 18px;
+  padding: 0 35px;
+  margin-bottom: 50px;
+}
+#banner a {
+  border-radius: 50px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right bottom, #ea72da, #da6bdb, #c965db, #b760dc, #a35bdc);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.44);
+}
+
 /*# sourceMappingURL=style.css.map */
