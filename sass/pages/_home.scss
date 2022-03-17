@@ -22,7 +22,6 @@
         background-color: #f5edff;
         i {
             color: $primary;
-          
         }
       }
     }
@@ -63,4 +62,18 @@
 
 #step-icone-tall {
   font-size: 30px;
+}
+
+#restaurants {
+  padding: 40px 20px;
+  background-color: $fourth;
+  h2 {
+    font-weight: 600;
+    font-size: 35px;
+    padding-bottom: 15px;
+  }
+  a {
+   text-decoration: none; 
+   color: black;
+  }
 }

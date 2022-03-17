@@ -118,6 +118,23 @@ form ::placeholder {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.44);
 }
 
+article {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
+}
+article .article-img {
+  border-radius: 15px 15px 0 0;
+}
+article .article-img img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+article .article-text {
+  height: 50px;
+}
+
 footer {
   background-color: #353535;
   padding: 30px;
@@ -209,6 +226,20 @@ footer a i {
 
 #step-icone-tall {
   font-size: 30px;
+}
+
+#restaurants {
+  padding: 40px 20px;
+  background-color: #f6f6f6;
+}
+#restaurants h2 {
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 15px;
+}
+#restaurants a {
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
