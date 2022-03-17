@@ -120,54 +120,58 @@ form ::placeholder {
 
 #functioning {
   padding: 40px 20px;
-  /* desktop >> if screen is equal or more then*/
 }
 #functioning h2 {
   font-weight: 600;
   font-size: 35px;
   padding-bottom: 15px;
 }
-@media screen and (min-width: 535px) {
+#functioning ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* desktop >> if screen is equal or more then*/
+}
+@media screen and (min-width: 768px) {
   #functioning ul {
-    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
+}
+#functioning ul a {
+  text-decoration: none;
+  position: relative;
 }
 
 .step {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 30px 0;
+  width: 440px;
+  background-color: #f6f6f6;
+  margin: 30px 10px;
+  padding: 30px 0;
+  border-radius: 25px;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 .step p {
   position: absolute;
-  top: 30px;
-  left: 10px;
+  top: 60px;
+  left: -5px;
   color: white;
   font-size: 20px;
   background-color: #9356DC;
   padding: 4px 10px;
   border-radius: 50px;
 }
-
-.step-content {
-  display: flex;
-  align-items: center;
-  background-color: #f6f6f6;
-  padding: 30px 0;
-  width: 440px;
-  border-radius: 25px;
-  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
-}
-.step-content i {
+.step i {
   color: #747474;
   font-size: 24px;
   padding: 0 50px;
 }
-.step-content h3 {
+.step h3 {
+  color: black;
   font-size: 25px;
   font-weight: 600;
 }
