@@ -1,0 +1,57 @@
+#functioning {
+  padding: 40px 20px;
+  h2 {
+    font-weight: 600;
+    font-size: 35px;
+    padding-bottom: 15px;
+  }
+    /* desktop >> if screen is equal or more then*/
+    @media screen and (min-width: 535px) {
+      ul {
+      display: flex;
+      flex-direction: row;
+      }
+    } 
+ }
+
+.step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  p {    
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+    background-color: $primary;
+    padding: 4px 10px;
+    border-radius: 50px;
+  }
+}
+
+.step-content {
+  display: flex;
+  align-items: center;
+  background-color: $fourth;
+  padding: 30px 0;
+  width: 440px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
+  overflow: hidden;
+  i {
+    color: $eighth;
+    font-size: 24px;
+    padding: 0 50px;
+  }
+  h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+#step-icone-tall {
+  font-size: 30px;
+}
