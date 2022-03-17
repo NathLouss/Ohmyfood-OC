@@ -1,0 +1,24 @@
+footer {
+  background-color: $seventh;
+  padding: 30px;
+  h4 {
+    font-family: $shrikhand;
+    color: white;
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  li {
+    padding-bottom: 10px;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    i {
+      font-size: 18px;
+    }
+  }
+}
