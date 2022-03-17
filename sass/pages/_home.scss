@@ -18,6 +18,13 @@
     a {
       text-decoration: none;
       position: relative;
+      :hover {
+        background-color: #f5edff;
+        i {
+            color: $primary;
+          
+        }
+      }
     }
   }
 }

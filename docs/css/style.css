@@ -143,6 +143,12 @@ form ::placeholder {
   text-decoration: none;
   position: relative;
 }
+#functioning ul a :hover {
+  background-color: #f5edff;
+}
+#functioning ul a :hover i {
+  color: #9356DC;
+}
 
 .step {
   display: flex;
