@@ -2,14 +2,14 @@ form {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  background-color: $fifth;
   column-gap: 10px;
-  box-shadow: inset 0 2px 4px #bdbdbd;
+  box-shadow: inset 0 2px 4px $sixth;
   padding: 20px;
-  background-color: #eaeaea;
 
   i {
     font-size: 22px;
-    color: #353535;
+    color: $seventh;
   }
 
   input {
@@ -18,6 +18,6 @@ form {
     font-weight: bold;
     font-size: 18px;
     border: none;
-    background-color: #eaeaea;
+    background-color: $fifth;
   }
 }

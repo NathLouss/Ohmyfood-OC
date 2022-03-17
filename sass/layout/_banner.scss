@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: $fourth;
   h1 {
     font-family: "shrikland", sans-serif;
     padding: 30px 75px 20px 75px;
@@ -23,7 +23,7 @@
       color: white;
       font-weight: 600;
       letter-spacing: 1px;
-      background-image: linear-gradient(to right bottom, #ea72da, #da6bdb, #c965db, #b760dc, #a35bdc);
+      background-image: linear-gradient(to right bottom, $secondary, #da6bdb, #c965db, #b760dc, $primary);
       box-shadow: 0px 2px 8px 0px rgb(0 0 0 / 44%);
     }
   }
