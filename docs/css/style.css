@@ -1,5 +1,5 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -46,15 +46,15 @@ td, th {
 
 body {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 header {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px 10px;
   /* desktop >> if screen is equal or more then*/
 }
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 535px) {
   header {
     text-align: initial;
   }
@@ -72,14 +72,18 @@ form {
 form i {
   font-size: 22px;
   color: #353535;
+  padding-right: 10px;
 }
 form input {
   width: 140px;
-  font-family: "Roboto";
+  font-family: "roboto", sans-serif;
   font-weight: bold;
   font-size: 18px;
   border: none;
   background-color: #eaeaea;
+}
+form ::placeholder {
+  color: #353535;
 }
 
 #banner {
@@ -90,24 +94,26 @@ form input {
   background-color: #f6f6f6;
 }
 #banner h1 {
-  font-family: "shrikland", sans-serif;
-  padding: 30px 75px 20px 75px;
+  font-size: 35px;
+  font-weight: bolder;
+  padding: 50px 75px 20px 75px;
 }
 #banner p {
-  font-size: 18px;
-  padding: 0 35px;
-  margin-bottom: 50px;
+  font-size: 25px;
+  color: #747474;
+  padding: 0 35px 50px;
 }
 #banner div {
-  padding-bottom: 60px;
+  padding-bottom: 100px;
+  padding-top: 15px;
 }
 #banner div a {
   border-radius: 50px;
-  padding: 15px;
+  padding: 20px 25px;
   text-decoration: none;
   color: white;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 500;
   background-image: linear-gradient(to right bottom, #FF79DA, #da6bdb, #c965db, #b760dc, #9356DC);
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.44);
 }

@@ -10,14 +10,18 @@ form {
   i {
     font-size: 22px;
     color: $seventh;
+    padding-right: 10px;
   }
 
   input {
     width: 140px;
-    font-family: 'Roboto';
+    font-family: $roboto;
     font-weight: bold;
     font-size: 18px;
     border: none;
     background-color: $fifth;
+  }
+  ::placeholder {
+    color: $seventh;
   }
 }
