@@ -73,7 +73,9 @@ article .article-img p {
   padding: 10px 15px;
 }
 article .article-text {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 90px;
   padding: 15px 20px;
 }
@@ -84,9 +86,6 @@ article .article-text h3 {
   padding-bottom: 5px;
 }
 article .article-text i {
-  position: relative;
-  bottom: 45px;
-  left: 415px;
   font-size: 30px;
   color: #353535;
 }

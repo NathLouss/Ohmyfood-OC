@@ -21,7 +21,9 @@ article {
     }
   }
   .article-text {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 90px;
     padding: 15px 20px;
     h3 {
@@ -31,9 +33,6 @@ article {
       padding-bottom: 5px;
     }
     i {
-      position: relative;
-      bottom: 45px;
-      left: 415px;
       font-size: 30px;
       color: $seventh;
     }
