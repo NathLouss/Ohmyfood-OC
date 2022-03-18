@@ -2,7 +2,7 @@ header {
   text-align: center;
   padding: 30px 20px 10px;
   /* desktop >> if screen is equal or more then*/
-  @media screen and (min-width: 535px) {
+  @media screen and (min-width: 768px) {
     text-align: initial;
   } 
 }

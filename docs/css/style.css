@@ -53,6 +53,7 @@ article {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
 }
 article .article-img {
   position: relative;
@@ -79,7 +80,12 @@ article .article-text {
   height: 90px;
   padding: 15px 20px;
 }
-article .article-text h3 {
+article .article-text #article-text-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0;
+}
+article .article-text #article-text-left h3 {
   color: black;
   font-size: 25px;
   font-weight: 600;
@@ -110,7 +116,7 @@ header {
   padding: 30px 20px 10px;
   /* desktop >> if screen is equal or more then*/
 }
-@media screen and (min-width: 535px) {
+@media screen and (min-width: 768px) {
   header {
     text-align: initial;
   }
@@ -187,6 +193,15 @@ footer a i {
 
 #functioning {
   padding: 40px 20px;
+  /* desktop >> if screen is equal or more then*/
+}
+@media screen and (min-width: 1600px) {
+  #functioning {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 80px;
+  }
 }
 #functioning h2 {
   font-weight: 600;
@@ -196,7 +211,6 @@ footer a i {
 #functioning ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
   /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 768px) {
@@ -204,6 +218,7 @@ footer a i {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    column-gap: 20px;
   }
 }
 #functioning ul a {
@@ -220,9 +235,9 @@ footer a i {
 .step {
   display: flex;
   align-items: center;
-  width: 440px;
+  width: 100%;
   background-color: #f6f6f6;
-  margin: 30px 10px;
+  margin: 30px 0;
   padding: 30px 0;
   border-radius: 25px;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
@@ -240,32 +255,57 @@ footer a i {
 .step i {
   color: #747474;
   font-size: 24px;
-  padding-left: 45px;
+  padding-left: 60px;
   padding-right: 40px;
 }
 .step h3 {
   color: black;
   font-size: 22px;
   font-weight: 600;
+  padding-right: 35px;
 }
 
 #step-icone-tall {
   font-size: 30px;
 }
 
-#restaurants {
+.restaurants {
   padding: 40px 20px;
   background-color: #f6f6f6;
 }
-#restaurants h2 {
+.restaurants h2 {
   font-weight: 600;
   font-size: 35px;
   padding-top: 15px;
   padding-bottom: 25px;
 }
-#restaurants a {
+.restaurants div {
+  /* desktop >> if screen is equal or more then*/
+}
+@media screen and (min-width: 768px) {
+  .restaurants div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+.restaurants div a {
   text-decoration: none;
   color: black;
+  /* tablet >> if screen is equal or more then*/
+  /* desktop >> if screen is equal or more then*/
+}
+@media screen and (min-width: 768px) {
+  .restaurants div a {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants div a {
+    flex-basis: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
