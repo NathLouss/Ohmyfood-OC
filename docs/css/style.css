@@ -45,8 +45,65 @@ td, th {
 }
 
 body {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "roboto", sans-serif;
+}
+
+article {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
+}
+article .article-img {
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
+article .article-img img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+article .article-img p {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #008766;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+article .article-text {
+  position: relative;
+  height: 90px;
+  padding: 15px 20px;
+}
+article .article-text h3 {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+article .article-text i {
+  position: relative;
+  bottom: 45px;
+  left: 415px;
+  font-size: 30px;
+  color: #353535;
+}
+
+.button {
+  padding-bottom: 100px;
+  padding-top: 15px;
+}
+.button a {
+  border-radius: 50px;
+  padding: 20px 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  background-image: linear-gradient(to right bottom, #FF79DA, #da6bdb, #c965db, #b760dc, #9356DC);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.44);
 }
 
 header {
@@ -103,37 +160,6 @@ form ::placeholder {
   color: #747474;
   padding: 0 35px 50px;
 }
-#banner div {
-  padding-bottom: 100px;
-  padding-top: 15px;
-}
-#banner div a {
-  border-radius: 50px;
-  padding: 20px 25px;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 500;
-  background-image: linear-gradient(to right bottom, #FF79DA, #da6bdb, #c965db, #b760dc, #9356DC);
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.44);
-}
-
-article {
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
-}
-article .article-img {
-  border-radius: 15px 15px 0 0;
-}
-article .article-img img {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-}
-article .article-text {
-  height: 50px;
-}
 
 footer {
   background-color: #353535;
@@ -166,7 +192,7 @@ footer a i {
 #functioning h2 {
   font-weight: 600;
   font-size: 35px;
-  padding-bottom: 15px;
+  padding-top: 15px;
 }
 #functioning ul {
   display: flex;
@@ -208,7 +234,6 @@ footer a i {
   top: 60px;
   left: -5px;
   color: white;
-  font-size: 20px;
   background-color: #9356DC;
   padding: 4px 10px;
   border-radius: 50px;
@@ -216,11 +241,12 @@ footer a i {
 .step i {
   color: #747474;
   font-size: 24px;
-  padding: 0 50px;
+  padding-left: 45px;
+  padding-right: 40px;
 }
 .step h3 {
   color: black;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -235,7 +261,8 @@ footer a i {
 #restaurants h2 {
   font-weight: 600;
   font-size: 35px;
-  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 #restaurants a {
   text-decoration: none;

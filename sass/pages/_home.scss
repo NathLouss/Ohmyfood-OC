@@ -3,7 +3,7 @@
   h2 {
     font-weight: 600;
     font-size: 35px;
-    padding-bottom: 15px;
+    padding-top: 15px;
   }
   ul {
     display: flex;
@@ -43,7 +43,6 @@
     top: 60px;
     left: -5px;
     color: white;
-    font-size: 20px;
     background-color: $primary;
     padding: 4px 10px;
     border-radius: 50px;
@@ -51,11 +50,12 @@
   i {
     color: $eighth;
     font-size: 24px;
-    padding: 0 50px;
+    padding-left: 45px;
+    padding-right: 40px;
   }
   h3 {
     color: black;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
   }
 }
@@ -70,7 +70,8 @@
   h2 {
     font-weight: 600;
     font-size: 35px;
-    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 25px;
   }
   a {
    text-decoration: none; 
