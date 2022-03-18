@@ -72,7 +72,7 @@
   font-size: 30px;
 }
 
-.restaurants {
+#restaurants {
   padding: 40px 20px;
   background-color: $fourth;
   h2 {
@@ -87,6 +87,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
       column-gap: 20px;
       row-gap: 20px;
     }
@@ -95,7 +96,7 @@
       color: black;
       /* tablet >> if screen is equal or more then*/
       @media screen and (min-width: 768px) {
-        flex-basis: 50%;
+        flex-basis: 48%;
       }
       /* desktop >> if screen is equal or more then*/
       @media screen and (min-width: 1024px) {

@@ -73,25 +73,25 @@ article .article-img p {
   border-radius: 3px;
   padding: 10px 15px;
 }
-article .article-text {
+article #article-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 90px;
   padding: 15px 20px;
 }
-article .article-text #article-text-left {
+article #article-text #article-text-left {
   display: flex;
   flex-direction: column;
   row-gap: 0;
 }
-article .article-text #article-text-left h3 {
+article #article-text #article-text-left h3 {
   color: black;
   font-size: 25px;
   font-weight: 600;
   padding-bottom: 5px;
 }
-article .article-text i {
+article #article-text i {
   font-size: 30px;
   color: #353535;
 }
@@ -269,41 +269,42 @@ footer a i {
   font-size: 30px;
 }
 
-.restaurants {
+#restaurants {
   padding: 40px 20px;
   background-color: #f6f6f6;
 }
-.restaurants h2 {
+#restaurants h2 {
   font-weight: 600;
   font-size: 35px;
   padding-top: 15px;
   padding-bottom: 25px;
 }
-.restaurants div {
+#restaurants div {
   /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 768px) {
-  .restaurants div {
+  #restaurants div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     column-gap: 20px;
     row-gap: 20px;
   }
 }
-.restaurants div a {
+#restaurants div a {
   text-decoration: none;
   color: black;
   /* tablet >> if screen is equal or more then*/
   /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 768px) {
-  .restaurants div a {
-    flex-basis: 50%;
+  #restaurants div a {
+    flex-basis: 48%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .restaurants div a {
+  #restaurants div a {
     flex-basis: 30%;
   }
 }
