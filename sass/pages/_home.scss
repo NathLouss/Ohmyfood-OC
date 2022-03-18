@@ -1,6 +1,6 @@
 #functioning {
   padding: 40px 20px;
-  /* desktop >> if screen is equal or more then*/
+  // desktop >> if screen is equal or more then
   @media screen and (min-width: 1600px) {
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@
   ul {
     display: flex;
     flex-direction: column;
-    /* desktop >> if screen is equal or more then*/
+    // desktop >> if screen is equal or more then
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -60,16 +60,15 @@
     padding-left: 60px;
     padding-right: 40px;
   }
+  #step-icone-tall {
+    font-size: 30px;
+  }
   h3 {
     color: black;
     font-size: 22px;
     font-weight: 600;
     padding-right: 35px;
   }
-}
-
-#step-icone-tall {
-  font-size: 30px;
 }
 
 #restaurants {
@@ -82,7 +81,7 @@
     padding-bottom: 25px;
   }
   div {
-    /* desktop >> if screen is equal or more then*/
+    // desktop >> if screen is equal or more then
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: row;
@@ -94,11 +93,11 @@
     a {
       text-decoration: none; 
       color: black;
-      /* tablet >> if screen is equal or more then*/
+      // tablet >> if screen is equal or more then
       @media screen and (min-width: 768px) {
         flex-basis: 48%;
       }
-      /* desktop >> if screen is equal or more then*/
+      // desktop >> if screen is equal or more then
       @media screen and (min-width: 1024px) {
         flex-basis: 30%;
       }

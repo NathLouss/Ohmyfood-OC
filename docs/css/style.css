@@ -73,27 +73,34 @@ article .article-img p {
   border-radius: 3px;
   padding: 10px 15px;
 }
-article #article-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+article .article-text {
+  position: relative;
   height: 90px;
   padding: 15px 20px;
 }
-article #article-text #article-text-left {
-  display: flex;
-  flex-direction: column;
-  row-gap: 0;
+article .article-text i {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 30px;
+  color: #353535;
 }
-article #article-text #article-text-left h3 {
+article .article-text #article-text-left {
+  position: absolute;
+  left: 20px;
+}
+@media screen and (min-width: 768px) {
+  article .article-text #article-text-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+}
+article .article-text #article-text-left h3 {
   color: black;
   font-size: 25px;
   font-weight: 600;
   padding-bottom: 5px;
-}
-article #article-text i {
-  font-size: 30px;
-  color: #353535;
 }
 
 .button {
@@ -114,7 +121,6 @@ article #article-text i {
 header {
   text-align: center;
   padding: 30px 20px 10px;
-  /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 768px) {
   header {
@@ -193,7 +199,6 @@ footer a i {
 
 #functioning {
   padding: 40px 20px;
-  /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 1600px) {
   #functioning {
@@ -211,7 +216,6 @@ footer a i {
 #functioning ul {
   display: flex;
   flex-direction: column;
-  /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 768px) {
   #functioning ul {
@@ -258,15 +262,14 @@ footer a i {
   padding-left: 60px;
   padding-right: 40px;
 }
+.step #step-icone-tall {
+  font-size: 30px;
+}
 .step h3 {
   color: black;
   font-size: 22px;
   font-weight: 600;
   padding-right: 35px;
-}
-
-#step-icone-tall {
-  font-size: 30px;
 }
 
 #restaurants {
@@ -278,9 +281,6 @@ footer a i {
   font-size: 35px;
   padding-top: 15px;
   padding-bottom: 25px;
-}
-#restaurants div {
-  /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 768px) {
   #restaurants div {
@@ -295,8 +295,6 @@ footer a i {
 #restaurants div a {
   text-decoration: none;
   color: black;
-  /* tablet >> if screen is equal or more then*/
-  /* desktop >> if screen is equal or more then*/
 }
 @media screen and (min-width: 768px) {
   #restaurants div a {
