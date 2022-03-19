@@ -118,6 +118,17 @@ article .article-text #article-text-left h3 {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.44);
 }
 
+.return {
+  text-decoration: none;
+  color: #353535;
+}
+.return i {
+  position: absolute;
+  left: 30px;
+  top: 33px;
+  font-size: 25px;
+}
+
 header {
   text-align: center;
   padding: 30px 20px 10px;
@@ -170,6 +181,23 @@ form ::placeholder {
   font-size: 25px;
   color: #747474;
   padding: 0 35px 50px;
+}
+
+.banner-restaurant {
+  background-color: #f6f6f6;
+}
+.banner-restaurant div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.banner-restaurant h1 {
+  font-size: 30px;
+  font-family: "Shrikhand", cursive;
+}
+.banner-restaurant i {
+  font-size: 26px;
 }
 
 footer {
