@@ -17,18 +17,29 @@
 }
 
 .banner-restaurant {
-  background-color: $fourth;
+  position: relative;
+  img {
+    position: relative;
+    z-index: 1;
+  }
   div {
+    position: absolute;
+    z-index: 2;
+    bottom: -60px;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    background-color: $fourth;
+    padding: 30px;
   }
   h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: $shrikhand;
   }
   i {
-    font-size: 26px;
+    font-size: 30px;
+    color: $seventh;
   }
 }

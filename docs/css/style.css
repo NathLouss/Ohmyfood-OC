@@ -184,20 +184,31 @@ form ::placeholder {
 }
 
 .banner-restaurant {
-  background-color: #f6f6f6;
+  position: relative;
+}
+.banner-restaurant img {
+  position: relative;
+  z-index: 1;
 }
 .banner-restaurant div {
+  position: absolute;
+  z-index: 2;
+  bottom: -60px;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  background-color: #f6f6f6;
+  padding: 30px;
 }
 .banner-restaurant h1 {
-  font-size: 30px;
+  font-size: 40px;
   font-family: "Shrikhand", cursive;
 }
 .banner-restaurant i {
-  font-size: 26px;
+  font-size: 30px;
+  color: #353535;
 }
 
 footer {
@@ -333,6 +344,41 @@ footer a i {
   #restaurants div a {
     flex-basis: 30%;
   }
+}
+
+.entrees {
+  position: relative;
+  top: 60px;
+  background-color: #f6f6f6;
+  padding-bottom: 50px;
+}
+.entrees h2 {
+  font-size: 24px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+.entrees hr {
+  border: 2px solid #99E2D0;
+  width: 60px;
+  margin-left: 20px;
+}
+.entrees .entrees-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
+}
+.entrees .entrees-card h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.entrees .entrees-card .price {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
