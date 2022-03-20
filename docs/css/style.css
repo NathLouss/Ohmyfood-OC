@@ -134,6 +134,11 @@ article .article-text #article-text-left h3 {
   margin-top: 70px;
   padding-bottom: 120px;
 }
+@media screen and (min-width: 768px) {
+  .button-order {
+    margin-top: 20px;
+  }
+}
 .button-order a {
   padding: 20px 60px;
 }
@@ -199,6 +204,13 @@ form ::placeholder {
   position: relative;
   z-index: 1;
 }
+@media screen and (min-width: 768px) {
+  .banner-restaurant img {
+    height: 550px;
+    width: -webkit-fill-available;
+    object-fit: cover;
+  }
+}
 .banner-restaurant div {
   position: absolute;
   z-index: 2;
@@ -211,9 +223,19 @@ form ::placeholder {
   background-color: #f6f6f6;
   padding: 30px;
 }
+@media screen and (min-width: 768px) {
+  .banner-restaurant div {
+    justify-content: start;
+  }
+}
 .banner-restaurant h1 {
   font-size: 40px;
   font-family: "Shrikhand", cursive;
+}
+@media screen and (min-width: 768px) {
+  .banner-restaurant h1 {
+    margin-right: 30px;
+  }
 }
 .banner-restaurant i {
   font-size: 30px;
@@ -365,20 +387,31 @@ footer a i {
   top: 60px;
   background-color: #f6f6f6;
 }
-.menu .menu-category {
+@media screen and (min-width: 995px) {
+  .menu .cart {
+    display: flex;
+    justify-content: center;
+  }
+}
+.menu .cart .menu-category {
   margin-bottom: 50px;
 }
-.menu .menu-category h2 {
+@media screen and (min-width: 995px) {
+  .menu .cart .menu-category {
+    flex-basis: 32%;
+  }
+}
+.menu .cart .menu-category h2 {
   font-size: 24px;
   margin-left: 20px;
   margin-bottom: 5px;
 }
-.menu .menu-category hr {
+.menu .cart .menu-category hr {
   border: 2px solid #99E2D0;
   width: 60px;
   margin-left: 20px;
 }
-.menu .menu-category .menu-card {
+.menu .cart .menu-category .menu-card {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -388,12 +421,12 @@ footer a i {
   margin: 20px;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
 }
-.menu .menu-category .menu-card h3 {
+.menu .cart .menu-category .menu-card h3 {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.menu .menu-category .menu-card .price {
+.menu .cart .menu-category .menu-card .price {
   font-weight: bold;
 }
 
