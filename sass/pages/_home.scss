@@ -100,12 +100,19 @@
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 1024px) {
         flex-basis: 30%;
-        i {
-          opacity: 0.2;
-          transition: opacity 2s ease 0s;
+        .span {
+          transition: color 2s ease 0s;
+          .after {
+            visibility: hidden;
+          } 
           &:hover {
-            color: linear-gradient(to right bottom, $secondary, $primary);
-            opacity: 1;
+            color: #9356dc;
+            .before {
+              visibility: hidden;
+            }
+            .after {
+              visibility: visible;
+            }
           }
         }
       }
