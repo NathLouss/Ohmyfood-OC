@@ -389,6 +389,14 @@ footer a i {
   #restaurants div a {
     flex-basis: 30%;
   }
+  #restaurants div a i {
+    opacity: 0.2;
+    transition: opacity 2s ease 0s;
+  }
+  #restaurants div a i:hover {
+    color: linear-gradient(to right bottom, #FF79DA, #9356DC);
+    opacity: 1;
+  }
 }
 
 .menu {
