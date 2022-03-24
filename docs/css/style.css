@@ -226,9 +226,6 @@ form ::placeholder {
   bottom: -60px;
   width: 100%;
   border-radius: 40px 40px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: #f6f6f6;
   padding: 30px;
 }
@@ -237,18 +234,34 @@ form ::placeholder {
     justify-content: start;
   }
 }
-.banner-restaurant h1 {
+.banner-restaurant div h1 {
   font-size: 40px;
   font-family: "Shrikhand", cursive;
 }
 @media screen and (min-width: 768px) {
-  .banner-restaurant h1 {
+  .banner-restaurant div h1 {
     margin-right: 30px;
   }
 }
-.banner-restaurant i {
+.banner-restaurant div i {
+  position: absolute;
+  right: 40px;
+  top: 45px;
   font-size: 30px;
-  color: #353535;
+}
+@media screen and (min-width: 768px) {
+  .banner-restaurant div i {
+    left: 345px;
+  }
+}
+
+#full-heart {
+  color: #9356dc;
+  opacity: 0;
+  transition: opacity 2s ease 0s;
+}
+#full-heart:hover {
+  opacity: 1;
 }
 
 footer {
@@ -389,21 +402,14 @@ footer a i {
   #restaurants div a {
     flex-basis: 30%;
   }
-  #restaurants div a .span {
-    transition: color 2s ease 0s;
-  }
-  #restaurants div a .span .after {
-    visibility: hidden;
-  }
-  #restaurants div a .span:hover {
-    color: #9356dc;
-  }
-  #restaurants div a .span:hover .before {
-    visibility: hidden;
-  }
-  #restaurants div a .span:hover .after {
-    visibility: visible;
-  }
+}
+#restaurants div a .full-heart {
+  color: #9356dc;
+  opacity: 0;
+  transition: opacity 2s ease 0s;
+}
+#restaurants div a .full-heart:hover {
+  opacity: 1;
 }
 
 .menu {

@@ -100,22 +100,15 @@
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 1024px) {
         flex-basis: 30%;
-        .span {
-          transition: color 2s ease 0s;
-          .after {
-            visibility: hidden;
-          } 
-          &:hover {
-            color: #9356dc;
-            .before {
-              visibility: hidden;
-            }
-            .after {
-              visibility: visible;
-            }
-          }
-        }
       }
+      .full-heart {
+        color: #9356dc;
+        opacity: 0;
+        transition: opacity 2s ease 0s;
+        &:hover {
+          opacity: 1;
+        }
+      } 
     }
   }
 }
