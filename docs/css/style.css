@@ -451,13 +451,33 @@ footer a i {
   margin: 20px;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
 }
-.menu .cart .menu-category .menu-card h3 {
+.menu .cart .menu-category .menu-card:hover .menu-check {
+  display: block;
+  animation: slideIn 1s ease-in 0s 1 alternate both;
+}
+.menu .cart .menu-category .menu-card .menu-text h3 {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .cart .menu-category .menu-card .menu-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .cart .menu-category .menu-card .price {
   font-weight: bold;
+}
+.menu .cart .menu-category .menu-card .menu-check {
+  display: none;
+  background-color: #99E2D0;
+  width: 150px;
+  text-align: center;
+}
+.menu .cart .menu-category .menu-card .menu-check i {
+  color: white;
+  font-size: 50px;
 }
 
 #menu-entrees {
@@ -487,6 +507,16 @@ footer a i {
   }
 }
 
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
