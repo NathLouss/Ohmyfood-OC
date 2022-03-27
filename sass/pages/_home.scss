@@ -1,3 +1,22 @@
+body {
+  animation: loading 3s ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    background-color: #ffffff;
+    opacity: 0;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 #functioning {
   padding: 40px 20px;
   // desktop >> if screen is equal or more then

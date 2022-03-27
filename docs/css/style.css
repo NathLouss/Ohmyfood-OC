@@ -306,6 +306,22 @@ footer a i {
   top: 60px;
 }
 
+body {
+  animation: loading 3s ease-in-out;
+}
+
+@keyframes loading {
+  0% {
+    background-color: #ffffff;
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #functioning {
   padding: 40px 20px;
 }
@@ -497,27 +513,45 @@ footer a i {
   display: none;
   background-color: #99E2D0;
   text-align: center;
-  padding: 5% 5%;
+  padding: 6% 5%;
   border-radius: 0 10px 10px 0;
 }
 .menu .cart .menu-category .menu-card .menu-check i {
   color: white;
-  font-size: 50px;
+  font-size: 36px;
 }
 
-#menu-entrees {
+#fadeIn1 {
+  animation: fadeInUp 2s ease-in-out 0.8s normal forwards;
+}
+@media screen and (min-width: 992px) {
+  #fadeIn1 {
+    animation: fadeInLeft 2s ease-in-out 0.8s normal forwards;
+  }
+}
+
+#fadeIn2 {
   animation: fadeInUp 2s ease-in-out 1s normal forwards;
 }
-@media screen and (min-width: 995px) {
-  #menu-entrees {
+@media screen and (min-width: 992px) {
+  #fadeIn2 {
     animation: fadeInLeft 2s ease-in-out 1s normal forwards;
+  }
+}
+
+#fadeIn3 {
+  animation: fadeInUp 2s ease-in-out 1.2s normal forwards;
+}
+@media screen and (min-width: 992px) {
+  #fadeIn3 {
+    animation: fadeInLeft 2s ease-in-out 1.2s normal forwards;
   }
 }
 
 #menu-plats {
   animation: fadeInUp 2s ease-in-out 2s normal forwards;
 }
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 992px) {
   #menu-plats {
     animation: fadeInUp 2s ease-in-out 1s normal forwards;
   }
@@ -526,7 +560,7 @@ footer a i {
 #menu-desserts {
   animation: fadeInUp 2s ease-in-out 3s normal forwards;
 }
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 992px) {
   #menu-desserts {
     animation: fadeInRight 2s ease-in-out 1s normal forwards;
   }

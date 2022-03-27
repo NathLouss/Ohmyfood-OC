@@ -30,7 +30,6 @@
         align-items: flex-end;
         background-color: white;
         border-radius: 15px;
-        // padding: 15px;
         margin: 20px;
         box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
         &:hover {
@@ -66,11 +65,11 @@
           display: none;
           background-color: $tertiary;
           text-align: center;
-          padding: 5% 5%;
+          padding: 6% 5%;
           border-radius: 0 10px 10px 0;
           i {
             color: white;
-            font-size: 50px;
+            font-size: 36px;
           }
         }
       }
@@ -78,18 +77,42 @@
   }
 }
 
-#menu-entrees {
+// #menu-entrees {
+//   animation: fadeInUp 2s ease-in-out 1s normal forwards;
+//   // desktop >> if screen is equal or more then
+//   @media screen and (min-width: 992px) {
+//     animation: fadeInLeft 2s ease-in-out 1s normal forwards;
+//   }
+// }
+
+#fadeIn1 {
+  animation: fadeInUp 2s ease-in-out 0.8s normal forwards;
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    animation: fadeInLeft 2s ease-in-out 0.8s normal forwards;
+  }
+}
+
+#fadeIn2 {
   animation: fadeInUp 2s ease-in-out 1s normal forwards;
   // desktop >> if screen is equal or more then
-  @media screen and (min-width: 995px) {
+  @media screen and (min-width: 992px) {
     animation: fadeInLeft 2s ease-in-out 1s normal forwards;
+  }
+}
+
+#fadeIn3 {
+  animation: fadeInUp 2s ease-in-out 1.2s normal forwards;
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    animation: fadeInLeft 2s ease-in-out 1.2s normal forwards;
   }
 }
 
 #menu-plats {
   animation: fadeInUp 2s ease-in-out 2s normal forwards;
   // desktop >> if screen is equal or more then
-  @media screen and (min-width: 995px) {
+  @media screen and (min-width: 992px) {
     animation: fadeInUp 2s ease-in-out 1s normal forwards;
   }  
 }
@@ -97,7 +120,7 @@
 #menu-desserts {
   animation: fadeInUp 2s ease-in-out 3s normal forwards;
   // desktop >> if screen is equal or more then
-  @media screen and (min-width: 995px) {
+  @media screen and (min-width: 992px) {
     animation: fadeInRight 2s ease-in-out 1s normal forwards;
   }
 }
