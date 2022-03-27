@@ -56,9 +56,21 @@
       right: 40px;
       top: 45px;
       font-size: 30px;
+      width: 50px;
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 768px) {
         left: 345px;
+      }
+    }
+    .heart {
+      position: absolute;
+      right: 40px;
+      top: 43px;
+      height: 34px;
+      width: 34px;
+      // desktop >> if screen is equal or more then
+      @media screen and (min-width: 768px) {
+        left: 343px;
       }
     }
   }
@@ -66,7 +78,6 @@
 
 //out of the implementation, specificity conflict
 #full-heart {
-  color: #9356dc;
   opacity: 0;
   transition: opacity 2s ease 0s;
   &:hover {

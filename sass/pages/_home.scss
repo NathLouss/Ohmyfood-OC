@@ -102,7 +102,11 @@
         flex-basis: 30%;
       }
       .full-heart {
-        color: #9356dc;
+        position: absolute;
+        top: 23px;
+        right: 33px;
+        height: 33px;
+        width: 33px;
         opacity: 0;
         transition: opacity 2s ease 0s;
         &:hover {

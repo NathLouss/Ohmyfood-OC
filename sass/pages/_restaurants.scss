@@ -36,9 +36,9 @@
         &:hover {
           .menu-check {
             display: block;
-            animation: slideInCheck 1s ease-in 0s 1 normal both;
+            animation: slideInCheck 0.6s ease-in both;
             i {
-              animation: rollInCheck 2s ease-in 0s 1 normal both;
+              animation: rollInCheck 0.6s ease-in both;
             }
           }
         }
@@ -50,6 +50,12 @@
             margin-bottom: 10px;
             overflow: hidden;
             text-overflow: ellipsis; 
+            white-space: nowrap;
+          }
+          p {
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            white-space: nowrap;
           }
         }        
         .price {
@@ -59,9 +65,8 @@
         .menu-check {
           display: none;
           background-color: $tertiary;
-          // width: 150px;
           text-align: center;
-          padding: 8% 10%;
+          padding: 5% 5%;
           border-radius: 0 10px 10px 0;
           i {
             color: white;
@@ -74,29 +79,28 @@
 }
 
 #menu-entrees {
-  animation: fadeInUp 2s ease-in-out 1s 1 normal forwards;
+  animation: fadeInUp 2s ease-in-out 1s normal forwards;
   // desktop >> if screen is equal or more then
   @media screen and (min-width: 995px) {
-    animation: fadeInLeft 2s ease-in-out 1s 1 normal forwards;
+    animation: fadeInLeft 2s ease-in-out 1s normal forwards;
   }
 }
 
 #menu-plats {
-  animation: fadeInUp 2s ease-in-out 2s 1 normal forwards;
+  animation: fadeInUp 2s ease-in-out 2s normal forwards;
   // desktop >> if screen is equal or more then
   @media screen and (min-width: 995px) {
-    animation: fadeInUp 2s ease-in-out 1s 1 normal forwards;
+    animation: fadeInUp 2s ease-in-out 1s normal forwards;
   }  
 }
 
 #menu-desserts {
-  animation: fadeInUp 2s ease-in-out 3s 1 normal forwards;
+  animation: fadeInUp 2s ease-in-out 3s normal forwards;
   // desktop >> if screen is equal or more then
   @media screen and (min-width: 995px) {
-    animation: fadeInRight 2s ease-in-out 1s 1 normal forwards;
+    animation: fadeInRight 2s ease-in-out 1s normal forwards;
   }
 }
-
 
 @keyframes fadeInUp {
   0% {
@@ -138,7 +142,7 @@
 @keyframes slideInCheck {
   0% {
     opacity: 0;
-    transform: translateX(250px);
+    transform: translateX(50px);
   }
 
   100% {
@@ -150,7 +154,7 @@
 @keyframes rollInCheck {
   0% {
     opacity: 0;
-    transform: translateX(250px) rotate(200deg);
+    transform: translateX(50px) rotate(-200deg);
   }
 
   100% {

@@ -248,15 +248,27 @@ form ::placeholder {
   right: 40px;
   top: 45px;
   font-size: 30px;
+  width: 50px;
 }
 @media screen and (min-width: 768px) {
   .banner-restaurant div i {
     left: 345px;
   }
 }
+.banner-restaurant div .heart {
+  position: absolute;
+  right: 40px;
+  top: 43px;
+  height: 34px;
+  width: 34px;
+}
+@media screen and (min-width: 768px) {
+  .banner-restaurant div .heart {
+    left: 343px;
+  }
+}
 
 #full-heart {
-  color: #9356dc;
   opacity: 0;
   transition: opacity 2s ease 0s;
 }
@@ -404,7 +416,11 @@ footer a i {
   }
 }
 #restaurants div a .full-heart {
-  color: #9356dc;
+  position: absolute;
+  top: 23px;
+  right: 33px;
+  height: 33px;
+  width: 33px;
   opacity: 0;
   transition: opacity 2s ease 0s;
 }
@@ -452,10 +468,10 @@ footer a i {
 }
 .menu .cart .menu-category .menu-card:hover .menu-check {
   display: block;
-  animation: slideInCheck 1s ease-in 0s 1 normal both;
+  animation: slideInCheck 0.6s ease-in both;
 }
 .menu .cart .menu-category .menu-card:hover .menu-check i {
-  animation: rollInCheck 2s ease-in 0s 1 normal both;
+  animation: rollInCheck 0.6s ease-in both;
 }
 .menu .cart .menu-category .menu-card .menu-text {
   padding: 15px;
@@ -466,6 +482,12 @@ footer a i {
   margin-bottom: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu .cart .menu-category .menu-card .menu-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu .cart .menu-category .menu-card .price {
   font-weight: bold;
@@ -475,7 +497,7 @@ footer a i {
   display: none;
   background-color: #99E2D0;
   text-align: center;
-  padding: 8% 10%;
+  padding: 5% 5%;
   border-radius: 0 10px 10px 0;
 }
 .menu .cart .menu-category .menu-card .menu-check i {
@@ -484,29 +506,29 @@ footer a i {
 }
 
 #menu-entrees {
-  animation: fadeInUp 2s ease-in-out 1s 1 normal forwards;
+  animation: fadeInUp 2s ease-in-out 1s normal forwards;
 }
 @media screen and (min-width: 995px) {
   #menu-entrees {
-    animation: fadeInLeft 2s ease-in-out 1s 1 normal forwards;
+    animation: fadeInLeft 2s ease-in-out 1s normal forwards;
   }
 }
 
 #menu-plats {
-  animation: fadeInUp 2s ease-in-out 2s 1 normal forwards;
+  animation: fadeInUp 2s ease-in-out 2s normal forwards;
 }
 @media screen and (min-width: 995px) {
   #menu-plats {
-    animation: fadeInUp 2s ease-in-out 1s 1 normal forwards;
+    animation: fadeInUp 2s ease-in-out 1s normal forwards;
   }
 }
 
 #menu-desserts {
-  animation: fadeInUp 2s ease-in-out 3s 1 normal forwards;
+  animation: fadeInUp 2s ease-in-out 3s normal forwards;
 }
 @media screen and (min-width: 995px) {
   #menu-desserts {
-    animation: fadeInRight 2s ease-in-out 1s 1 normal forwards;
+    animation: fadeInRight 2s ease-in-out 1s normal forwards;
   }
 }
 
@@ -543,7 +565,7 @@ footer a i {
 @keyframes slideInCheck {
   0% {
     opacity: 0;
-    transform: translateX(250px);
+    transform: translateX(50px);
   }
   100% {
     opacity: 1;
@@ -553,7 +575,7 @@ footer a i {
 @keyframes rollInCheck {
   0% {
     opacity: 0;
-    transform: translateX(250px) rotate(200deg);
+    transform: translateX(50px) rotate(-200deg);
   }
   100% {
     opacity: 1;
