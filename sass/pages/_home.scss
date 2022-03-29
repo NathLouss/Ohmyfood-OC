@@ -1,22 +1,3 @@
-.white-background {
-  animation: loading 3s ease-in;
-}
-
-@keyframes loading {
-  0% {
-    background-color: #ffffff;
-    opacity: 0.8;
-  }
-
-  95% {
-    opacity: 0.8;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
 #functioning {
   padding: 40px 20px;
   // desktop >> if screen is equal or more then
