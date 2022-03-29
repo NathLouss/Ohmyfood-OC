@@ -306,6 +306,10 @@ footer a i {
   top: 60px;
 }
 
+.white-background {
+  animation: loading 3s ease-in;
+}
+
 .loader {
   position: absolute;
   width: 100%;
@@ -320,10 +324,7 @@ footer a i {
 @keyframes loading {
   0% {
     background-color: #ffffff;
-    opacity: 0.6;
-  }
-  95% {
-    opacity: 0.3;
+    opacity: 0;
   }
   100% {
     opacity: 1;
