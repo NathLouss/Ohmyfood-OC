@@ -51,16 +51,21 @@
             text-overflow: ellipsis; 
             white-space: nowrap;
           }
-          p {
-            overflow: hidden;
-            text-overflow: ellipsis; 
-            white-space: nowrap;
+          .menu-text-detail {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+              overflow: hidden;
+              text-overflow: ellipsis; 
+              white-space: nowrap;
+            }
+            .price {
+              font-weight: bold;
+              padding: 15px;
+            }
           }
         }        
-        .price {
-          font-weight: bold;
-          padding: 15px;
-        }
         .menu-check {
           display: none;
           background-color: $tertiary;

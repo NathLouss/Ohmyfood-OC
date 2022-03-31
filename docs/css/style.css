@@ -544,12 +544,17 @@ footer a i {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .cart .menu-category .menu-card .menu-text p {
+.menu .cart .menu-category .menu-card .menu-text .menu-text-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu .cart .menu-category .menu-card .menu-text .menu-text-detail p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu .cart .menu-category .menu-card .price {
+.menu .cart .menu-category .menu-card .menu-text .menu-text-detail .price {
   font-weight: bold;
   padding: 15px;
 }
