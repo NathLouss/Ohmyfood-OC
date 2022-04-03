@@ -67,11 +67,19 @@ article {
     .menu-check {
       display: block;
       flex-basis: 25%;
-      animation: slideInCheck 0.6s ease-in both;
+      animation: slideInCheck 0.1s ease-out;
       i {
-        animation: rollInCheck 0.6s ease-in both;
+        animation: rollInCheck 0.4s ease-out;
       }
     }
+  }
+  // tablet >> if screen is equal or more then
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    width: auto;
   }
   .menu-text {
     padding: 15px;
@@ -108,5 +116,29 @@ article {
       color: white;
       font-size: 36px;
     }
+  }
+}
+
+@keyframes slideInCheck {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rollInCheck {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) rotate(-200deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
   }
 }

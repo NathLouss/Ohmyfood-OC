@@ -1,17 +1,33 @@
+main {
+  background-color: $fourth;
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    text-align: -webkit-center;
+  }
+}
+
 .menu {
   position: relative;
   top: 60px;
   background-color: $fourth;
   .cart {
-    // desktop >> if screen is equal or more then
-    @media screen and (min-width: 995px) {
-      display: flex;
-      justify-content: center;
-    }
+  // tablet >> if screen is equal or more then
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 992px;
+  }
     .menu-category {
       margin-bottom: 50px;
       // desktop >> if screen is equal or more then
-      @media screen and (min-width: 995px) {
+      @media screen and (min-width: 992px) {
         flex-basis: 32%;
       }
       h2 {
@@ -109,30 +125,5 @@
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-
-@keyframes slideInCheck {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes rollInCheck {
-  0% {
-    opacity: 0;
-    transform: translateX(50px) rotate(-200deg);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
   }
 }

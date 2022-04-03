@@ -28,20 +28,20 @@
       object-fit: cover;
     }
   }
-  div {
+  .banner-restaurant-title {
     position: absolute;
     z-index: 2;
     bottom: -60px;
     width: 100%;
     border-radius: 40px 40px 0 0;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: $fourth;
     padding: 30px;
-    // desktop >> if screen is equal or more then
+    // tablet >> if screen is equal or more then
     @media screen and (min-width: 768px) {
-      justify-content: start;
+      justify-content: center;
     }
     h1 {
       font-size: 40px;
@@ -51,26 +51,37 @@
         margin-right: 30px;
       }
     }
-    i {
-      position: absolute;
-      right: 40px;
-      top: 45px;
-      font-size: 30px;
-      width: 50px;
-      // desktop >> if screen is equal or more then
-      @media screen and (min-width: 768px) {
-        left: 345px;
+    .banner-restaurant-heart {
+      i {
+        position: relative;
+        // right: 40px;
+        // top: 45px;
+        font-size: 30px;
+        // width: 50px;
+        // tablet >> if screen is equal or more then
+        @media screen and (min-width: 768px) {
+          // left: 345px;
+        }
+        // desktop >> if screen is equal or more then
+        @media screen and (min-width: 992px) {
+          // right: 294px;
+          // left: 400px;
+        }
       }
-    }
-    .heart {
-      position: absolute;
-      right: 40px;
-      top: 43px;
-      height: 34px;
-      width: 34px;
-      // desktop >> if screen is equal or more then
-      @media screen and (min-width: 768px) {
-        left: 343px;
+      .heart {
+        position: absolute;
+        right: 27px;
+        top: 41px;
+        height: 34px;
+        width: 34px;
+        // tablet >> if screen is equal or more then
+        @media screen and (min-width: 768px) {
+          right: 208px;
+        }
+        // desktop >> if screen is equal or more then
+        @media screen and (min-width: 992px) {
+          right: 320px;
+        }
       }
     }
   }

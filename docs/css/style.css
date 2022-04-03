@@ -115,10 +115,20 @@ article .article-text #article-text-left h3 {
 .menu-card:hover .menu-check {
   display: block;
   flex-basis: 25%;
-  animation: slideInCheck 0.6s ease-in both;
+  animation: slideInCheck 0.1s ease-out;
 }
 .menu-card:hover .menu-check i {
-  animation: rollInCheck 0.6s ease-in both;
+  animation: rollInCheck 0.4s ease-out;
+}
+@media screen and (min-width: 768px) {
+  .menu-card {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu-card {
+    width: auto;
+  }
 }
 .menu-card .menu-text {
   padding: 15px;
@@ -157,6 +167,26 @@ article .article-text #article-text-left h3 {
   font-size: 36px;
 }
 
+@keyframes slideInCheck {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rollInCheck {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) rotate(-200deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
 .button {
   padding-bottom: 100px;
   padding-top: 15px;
@@ -274,51 +304,51 @@ form ::placeholder {
     object-fit: cover;
   }
 }
-.banner-restaurant div {
+.banner-restaurant .banner-restaurant-title {
   position: absolute;
   z-index: 2;
   bottom: -60px;
   width: 100%;
   border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f6f6f6;
   padding: 30px;
 }
 @media screen and (min-width: 768px) {
-  .banner-restaurant div {
-    justify-content: start;
+  .banner-restaurant .banner-restaurant-title {
+    justify-content: center;
   }
 }
-.banner-restaurant div h1 {
+.banner-restaurant .banner-restaurant-title h1 {
   font-size: 40px;
   font-family: "Shrikhand", cursive;
 }
 @media screen and (min-width: 768px) {
-  .banner-restaurant div h1 {
+  .banner-restaurant .banner-restaurant-title h1 {
     margin-right: 30px;
   }
 }
-.banner-restaurant div i {
-  position: absolute;
-  right: 40px;
-  top: 45px;
+.banner-restaurant .banner-restaurant-title .banner-restaurant-heart i {
+  position: relative;
   font-size: 30px;
-  width: 50px;
 }
-@media screen and (min-width: 768px) {
-  .banner-restaurant div i {
-    left: 345px;
-  }
-}
-.banner-restaurant div .heart {
+.banner-restaurant .banner-restaurant-title .banner-restaurant-heart .heart {
   position: absolute;
-  right: 40px;
-  top: 43px;
+  right: 27px;
+  top: 41px;
   height: 34px;
   width: 34px;
 }
 @media screen and (min-width: 768px) {
-  .banner-restaurant div .heart {
-    left: 343px;
+  .banner-restaurant .banner-restaurant-title .banner-restaurant-heart .heart {
+    right: 208px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner-restaurant .banner-restaurant-title .banner-restaurant-heart .heart {
+    right: 320px;
   }
 }
 
@@ -526,7 +556,7 @@ footer a i {
     flex-basis: 48%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   #restaurants div a {
     flex-basis: 30%;
   }
@@ -544,21 +574,39 @@ footer a i {
   opacity: 1;
 }
 
+main {
+  background-color: #f6f6f6;
+}
+@media screen and (min-width: 992px) {
+  main {
+    text-align: -webkit-center;
+  }
+}
+
 .menu {
   position: relative;
   top: 60px;
   background-color: #f6f6f6;
 }
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 768px) {
   .menu .cart {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu .cart {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 992px;
   }
 }
 .menu .cart .menu-category {
   margin-bottom: 50px;
 }
-@media screen and (min-width: 995px) {
+@media screen and (min-width: 992px) {
   .menu .cart .menu-category {
     flex-basis: 32%;
   }
@@ -647,26 +695,6 @@ footer a i {
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-@keyframes slideInCheck {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes rollInCheck {
-  0% {
-    opacity: 0;
-    transform: translateX(50px) rotate(-200deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
   }
 }
 
