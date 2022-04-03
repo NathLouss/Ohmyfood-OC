@@ -1,3 +1,5 @@
+// HOME PAGE ARTICLE RESTAURANT
+
 article {
   border-radius: 15px;
   overflow: hidden;
@@ -51,3 +53,60 @@ article {
     }
 }
 
+// RESTAURANT PAGE ARTICLE MENU
+
+.menu-card {
+  display: flex;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
+  &:hover {
+    .menu-text {
+      flex-basis: 75%;
+    }
+    .menu-check {
+      display: block;
+      flex-basis: 25%;
+      animation: slideInCheck 0.6s ease-in both;
+      i {
+        animation: rollInCheck 0.6s ease-in both;
+      }
+    }
+  }
+  .menu-text {
+    padding: 15px;
+    flex-basis: 100%;
+    overflow: hidden;
+    h3 {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis; 
+      white-space: nowrap;
+    }
+    .menu-text-detail {
+      display: flex;
+      justify-content: space-between;
+      #content {
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        white-space: nowrap;
+      }
+      #price {
+        font-weight: bold;
+      }
+    }
+  }        
+  .menu-check {
+    display: none;
+    flex-basis: 0%;
+    background-color: $tertiary;
+    text-align: center;
+    padding: 6% 5%;
+    i {
+      color: white;
+      font-size: 36px;
+    }
+  }
+}
