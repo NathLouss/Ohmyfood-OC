@@ -330,26 +330,18 @@ form ::placeholder {
     margin-right: 30px;
   }
 }
-.banner-restaurant .banner-restaurant-title .banner-restaurant-heart i {
+.banner-restaurant .banner-restaurant-title .banner-restaurant-heart {
   position: relative;
+}
+.banner-restaurant .banner-restaurant-title .banner-restaurant-heart i {
   font-size: 30px;
 }
 .banner-restaurant .banner-restaurant-title .banner-restaurant-heart .heart {
   position: absolute;
-  right: 27px;
-  top: 41px;
+  right: -3px;
+  top: -2px;
   height: 34px;
   width: 34px;
-}
-@media screen and (min-width: 768px) {
-  .banner-restaurant .banner-restaurant-title .banner-restaurant-heart .heart {
-    right: 208px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .banner-restaurant .banner-restaurant-title .banner-restaurant-heart .heart {
-    right: 320px;
-  }
 }
 
 #full-heart {
