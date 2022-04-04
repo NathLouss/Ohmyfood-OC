@@ -61,17 +61,19 @@ article {
   margin: 20px;
   box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
   &:hover {
-    .menu-text {
-      flex-basis: 75%;
-    }
-    .menu-check {
-      display: block;
-      flex-basis: 25%;
-      animation: slideInCheck 0.1s ease-out;
-      i {
-        animation: rollInCheck 0.4s ease-out;
+      .menu-text {
+        flex-basis: 75%;
       }
-    }
+      .menu-check {
+        display: block;
+        flex-basis: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          animation: rollInCheck 0.9s ease-out;
+        }
+      }
   }
   // tablet >> if screen is equal or more then
   @media screen and (min-width: 768px) {
@@ -85,6 +87,7 @@ article {
     padding: 15px;
     flex-basis: 100%;
     overflow: hidden;
+    transition: flex-basis 1s;
     h3 {
       font-size: 26px;
       font-weight: bold;
@@ -108,26 +111,12 @@ article {
   }        
   .menu-check {
     display: none;
-    flex-basis: 0%;
     background-color: $tertiary;
-    text-align: center;
-    padding: 6% 5%;
+    transition: flex-basis 1s;
     i {
       color: white;
       font-size: 36px;
     }
-  }
-}
-
-@keyframes slideInCheck {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 
