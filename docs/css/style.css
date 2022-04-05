@@ -146,9 +146,20 @@ article .article-text #article-text-left h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media screen and (min-width: 992px) {
+  .menu-card .menu-text h3 {
+    font-size: 22px;
+    text-align: left;
+  }
+}
 .menu-card .menu-text .menu-text-detail {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .menu-card .menu-text .menu-text-detail {
+    font-size: 18px;
+  }
 }
 .menu-card .menu-text .menu-text-detail #content {
   overflow: hidden;
@@ -168,6 +179,63 @@ article .article-text #article-text-left h3 {
   font-size: 36px;
 }
 
+#menu-card-first-load {
+  animation: fadeInUp 1s ease-in-out 0.8s backwards;
+}
+@media screen and (min-width: 992px) {
+  #menu-card-first-load {
+    animation: fadeInLeft 1s ease-in-out 0.8s backwards;
+  }
+}
+
+#menu-card-second-load {
+  animation: fadeInUp 1s ease-in-out 1s backwards;
+}
+@media screen and (min-width: 992px) {
+  #menu-card-second-load {
+    animation: fadeInLeft 1s ease-in-out 1s backwards;
+  }
+}
+
+#menu-card-third-load {
+  animation: fadeInUp 1s ease-in-out 1.2s backwards;
+}
+@media screen and (min-width: 992px) {
+  #menu-card-third-load {
+    animation: fadeInLeft 1s ease-in-out 1.2s backwards;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes rollInCheck {
   0% {
     opacity: 0;
@@ -603,82 +671,6 @@ main {
   border: 2px solid #99E2D0;
   width: 60px;
   margin-left: 20px;
-}
-
-#fadeIn1 {
-  animation: fadeInUp 2s ease-in-out 0.8s normal forwards;
-}
-@media screen and (min-width: 992px) {
-  #fadeIn1 {
-    animation: fadeInLeft 2s ease-in-out 0.8s normal forwards;
-  }
-}
-
-#fadeIn2 {
-  animation: fadeInUp 2s ease-in-out 1s normal forwards;
-}
-@media screen and (min-width: 992px) {
-  #fadeIn2 {
-    animation: fadeInLeft 2s ease-in-out 1s normal forwards;
-  }
-}
-
-#fadeIn3 {
-  animation: fadeInUp 2s ease-in-out 1.2s normal forwards;
-}
-@media screen and (min-width: 992px) {
-  #fadeIn3 {
-    animation: fadeInLeft 2s ease-in-out 1.2s normal forwards;
-  }
-}
-
-#menu-plats {
-  animation: fadeInUp 2s ease-in-out 2s normal forwards;
-}
-@media screen and (min-width: 992px) {
-  #menu-plats {
-    animation: fadeInUp 2s ease-in-out 1s normal forwards;
-  }
-}
-
-#menu-desserts {
-  animation: fadeInUp 2s ease-in-out 3s normal forwards;
-}
-@media screen and (min-width: 992px) {
-  #menu-desserts {
-    animation: fadeInRight 2s ease-in-out 1s normal forwards;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -61,19 +61,19 @@ article {
   margin: 20px;
   box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
   &:hover {
-      .menu-text {
-        flex-basis: 75%;
+    .menu-text {
+      flex-basis: 75%;
+    }
+    .menu-check {
+      display: block;
+      flex-basis: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        animation: rollInCheck 0.9s ease-out;
       }
-      .menu-check {
-        display: block;
-        flex-basis: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        i {
-          animation: rollInCheck 0.9s ease-out;
-        }
-      }
+    }
   }
   // tablet >> if screen is equal or more then
   @media screen and (min-width: 768px) {
@@ -95,10 +95,19 @@ article {
       overflow: hidden;
       text-overflow: ellipsis; 
       white-space: nowrap;
+      // desktop >> if screen is equal or more then
+      @media screen and (min-width: 992px) {
+        font-size: 22px;
+        text-align: left;
+      }
     }
     .menu-text-detail {
       display: flex;
       justify-content: space-between;
+      // desktop >> if screen is equal or more then
+      @media screen and (min-width: 992px) {
+        font-size: 18px;
+      }
       #content {
         overflow: hidden;
         text-overflow: ellipsis; 
@@ -117,6 +126,66 @@ article {
       color: white;
       font-size: 36px;
     }
+  }
+}
+
+#menu-card-first-load {
+  animation: fadeInUp 1s ease-in-out 0.8s backwards;
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    animation: fadeInLeft 1s ease-in-out 0.8s backwards;
+  }
+}
+
+#menu-card-second-load {
+  animation: fadeInUp 1s ease-in-out 1s backwards;
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    animation: fadeInLeft 1s ease-in-out 1s backwards;
+  }
+}
+
+#menu-card-third-load {
+  animation: fadeInUp 1s ease-in-out 1.2s backwards;
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    animation: fadeInLeft 1s ease-in-out 1.2s backwards;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
