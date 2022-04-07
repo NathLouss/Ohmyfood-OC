@@ -148,22 +148,23 @@ article .article-img p {
 article .article-text {
   display: flex;
   justify-content: space-between !important;
+  flex-direction: row;
   align-items: center;
   height: 90px;
   padding: 15px 20px;
 }
 @media screen and (min-width: 768px) {
-  article .article-text #article-text-left {
-    flex-direction: column;
-    row-gap: 0;
+  article .article-text .article-text-left {
+    flex-direction: column !important;
+    row-gap: 0 !important;
   }
 }
 @media screen and (min-width: 992px) {
-  article .article-text #article-text-left {
+  article .article-text .article-text-left {
     align-items: flex-start;
   }
 }
-article .article-text #article-text-left h3 {
+article .article-text .article-text-left h3 {
   color: black;
   font-size: 25px;
   font-weight: 600;
@@ -229,12 +230,12 @@ article .article-text #article-text-left h3 {
     font-size: 14px;
   }
 }
-.menu-card .menu-text .menu-text-detail #content {
+.menu-card .menu-text .menu-text-detail .content {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu-card .menu-text .menu-text-detail #price {
+.menu-card .menu-text .menu-text-detail .price {
   font-weight: bold;
 }
 .menu-card .menu-check {
@@ -510,36 +511,31 @@ footer a i {
     column-gap: 40px;
   }
 }
-#operation ul a {
-  text-decoration: none;
-  position: relative;
-}
-#operation ul a :hover {
-  background-color: #f5edff;
-}
-#operation ul a :hover i {
-  color: #9356DC;
-}
 
 .step {
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #f6f6f6;
   margin: 30px 0;
   padding: 30px 0;
   border-radius: 25px;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .step {
     width: 395px;
   }
 }
+.step:hover {
+  background-color: #f5edff;
+}
+.step:hover i {
+  color: #9356DC;
+}
 .step p {
   position: absolute;
-  top: 60px;
+  top: 30px;
   left: -10px;
   color: white;
   background-color: #9356DC;

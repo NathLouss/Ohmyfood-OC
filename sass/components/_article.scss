@@ -1,5 +1,4 @@
 // HOME PAGE ARTICLE RESTAURANT
-
 article {
   border-radius: 15px;
   overflow: hidden;
@@ -26,14 +25,15 @@ article {
   .article-text {
     display: flex;
     justify-content: space-between!important;
+    flex-direction: row;
     align-items: center;
     height: 90px;
     padding: 15px 20px;
-    #article-text-left {
+    .article-text-left {
       // tablet >> if screen is equal or more then
       @media screen and (min-width: 768px) {
-        flex-direction: column;
-        row-gap: 0;
+        flex-direction: column!important;
+        row-gap: 0!important;
       }
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 992px) {
@@ -50,7 +50,6 @@ article {
 }
 
 // RESTAURANT PAGE ARTICLE MENU
-
 .menu-card {
   display: flex;
   background-color: white;
@@ -105,12 +104,12 @@ article {
       @media screen and (min-width: 992px) {
         font-size: 14px;
       }
-      #content {
+      .content {
         overflow: hidden;
         text-overflow: ellipsis; 
         white-space: nowrap;
       }
-      #price {
+      .price {
         font-weight: bold;
       }
     }
