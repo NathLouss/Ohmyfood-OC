@@ -49,6 +49,58 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.first-load {
+  animation: fadeInUp 1s ease-in-out 0.8s backwards;
+}
+
+.second-load {
+  animation: fadeInUp 1s ease-in-out 1s backwards;
+}
+
+.third-load {
+  animation: fadeInUp 1s ease-in-out 1.2s backwards;
+}
+
+@keyframes rollInCheck {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) rotate(-200deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
 article {
   border-radius: 15px;
   overflow: hidden;
@@ -174,73 +226,6 @@ article .article-text #article-text-left h3 {
   font-size: 36px;
 }
 
-#menu-card-first-load {
-  animation: fadeInUp 1s ease-in-out 0.8s backwards;
-}
-@media screen and (min-width: 992px) {
-  #menu-card-first-load {
-    animation: fadeInLeft 1s ease-in-out 0.8s backwards;
-  }
-}
-
-#menu-card-second-load {
-  animation: fadeInUp 1s ease-in-out 1s backwards;
-}
-@media screen and (min-width: 992px) {
-  #menu-card-second-load {
-    animation: fadeInLeft 1s ease-in-out 1s backwards;
-  }
-}
-
-#menu-card-third-load {
-  animation: fadeInUp 1s ease-in-out 1.2s backwards;
-}
-@media screen and (min-width: 992px) {
-  #menu-card-third-load {
-    animation: fadeInLeft 1s ease-in-out 1.2s backwards;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes rollInCheck {
-  0% {
-    opacity: 0;
-    transform: translateX(50px) rotate(-200deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
-  }
-}
 .button {
   padding-bottom: 100px;
   padding-top: 15px;
@@ -499,34 +484,34 @@ footer a i {
     opacity: 0;
   }
 }
-#functioning {
+#operation {
   padding: 40px 20px;
 }
-#functioning h2 {
+#operation h2 {
   font-weight: 600;
   font-size: 35px;
   padding-top: 15px;
 }
-#functioning ul {
+#operation ul {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  #functioning ul {
+  #operation ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     column-gap: 20px;
   }
 }
-#functioning ul a {
+#operation ul a {
   text-decoration: none;
   position: relative;
 }
-#functioning ul a :hover {
+#operation ul a :hover {
   background-color: #f5edff;
 }
-#functioning ul a :hover i {
+#operation ul a :hover i {
   color: #9356DC;
 }
 

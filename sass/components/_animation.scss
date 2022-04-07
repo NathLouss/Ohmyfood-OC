@@ -1,0 +1,62 @@
+// ENTRANCE FADE IN ANIMATION
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.first-load {
+  animation: fadeInUp 1s ease-in-out 0.8s backwards;
+}
+
+.second-load {
+  animation: fadeInUp 1s ease-in-out 1s backwards;
+}
+
+.third-load {
+  animation: fadeInUp 1s ease-in-out 1.2s backwards;
+}
+
+// ENTRANCE FADE IN ROLL IN
+
+@keyframes rollInCheck {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) rotate(-200deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+}
