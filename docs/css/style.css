@@ -190,11 +190,11 @@ article .article-text #article-text-left h3 {
   flex-basis: 75%;
 }
 .menu-card:hover .menu-check {
+  display: block;
+  flex-basis: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
-  display: block;
-  flex-basis: 25%;
 }
 .menu-card:hover .menu-check i {
   animation: rollInCheck 0.9s ease-out;
@@ -217,6 +217,7 @@ article .article-text #article-text-left h3 {
   .menu-card .menu-text h3 {
     font-size: 18px;
     text-align: left;
+    margin-bottom: 5px;
   }
 }
 .menu-card .menu-text .menu-text-detail {
@@ -433,6 +434,11 @@ footer a {
   color: white;
   font-size: 24px;
 }
+@media screen and (min-width: 992px) {
+  footer a {
+    font-size: 16px;
+  }
+}
 footer a i {
   font-size: 18px;
 }
@@ -500,8 +506,8 @@ footer a i {
   #operation ul {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    column-gap: 20px;
+    justify-content: center;
+    column-gap: 40px;
   }
 }
 #operation ul a {
@@ -526,10 +532,15 @@ footer a i {
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
+@media screen and (min-width: 768px) {
+  .step {
+    width: 395px;
+  }
+}
 .step p {
   position: absolute;
   top: 60px;
-  left: -5px;
+  left: -10px;
   color: white;
   background-color: #9356DC;
   padding: 4px 10px;
@@ -555,6 +566,11 @@ footer a i {
   padding: 40px 20px;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 992px) {
+  #restaurants {
+    max-width: 1024px;
+  }
+}
 #restaurants h2 {
   font-weight: 600;
   font-size: 35px;
@@ -578,11 +594,6 @@ footer a i {
 @media screen and (min-width: 768px) {
   #restaurants div a {
     flex-basis: 48%;
-  }
-}
-@media screen and (min-width: 992px) {
-  #restaurants div a {
-    flex-basis: 31%;
   }
 }
 
@@ -632,6 +643,11 @@ main {
   border: 2px solid #99E2D0;
   width: 60px;
   margin-left: 20px;
+}
+@media screen and (min-width: 992px) {
+  .menu .cart .menu-category hr {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

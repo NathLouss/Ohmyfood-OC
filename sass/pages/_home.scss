@@ -13,8 +13,8 @@
     @media screen and (min-width: 768px) {
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
-      column-gap: 20px;
+      justify-content: center;
+      column-gap: 40px;
     }
     a {
       text-decoration: none;
@@ -40,10 +40,14 @@
   border-radius: 25px;
   box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
   overflow: hidden;
+  // tablet >> if screen is equal or more then
+  @media screen and (min-width: 768px) {
+    width: 395px;
+  }
   p {    
     position: absolute;
     top: 60px;
-    left: -5px;
+    left: -10px;
     color: white;
     background-color: $primary;
     padding: 4px 10px;
@@ -70,6 +74,10 @@
 #restaurants {
   padding: 40px 20px;
   background-color: $fourth;
+  // desktop >> if screen is equal or more then
+  @media screen and (min-width: 992px) {
+    max-width: 1024px;
+  }
   h2 {
     font-weight: 600;
     font-size: 35px;
@@ -92,10 +100,6 @@
       // tablet >> if screen is equal or more then
       @media screen and (min-width: 768px) {
         flex-basis: 48%;
-      }
-      // desktop >> if screen is equal or more then
-      @media screen and (min-width: 992px) {
-        flex-basis: 31%;
       }
     }
   }

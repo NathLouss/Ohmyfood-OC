@@ -69,11 +69,11 @@ article {
       flex-basis: 75%;
     }
     .menu-check {
+      display: block;
+      flex-basis: 25%;
       display: flex;
       align-items: center;
       justify-content: center;
-      display: block;
-      flex-basis: 25%;
       i {
         animation: rollInCheck 0.9s ease-out;
       }
@@ -95,6 +95,7 @@ article {
       @media screen and (min-width: 992px) {
         font-size: 18px;
         text-align: left;
+        margin-bottom: 5px;
       }
     }
     .menu-text-detail {

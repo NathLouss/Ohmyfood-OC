@@ -17,6 +17,10 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 24px;
+    // desktop >> if screen is equal or more then
+    @media screen and (min-width: 992px) {
+      font-size: 16px;
+    }
     i {
       font-size: 18px;
     }
