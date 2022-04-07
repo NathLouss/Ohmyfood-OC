@@ -45,10 +45,30 @@ td, th {
 }
 
 body {
-  font-size: 20px;
   font-family: "roboto", sans-serif;
+  font-size: 20px;
 }
 
+@keyframes loading {
+  0% {
+    z-index: 9999;
+  }
+  100% {
+    z-index: -1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(720deg);
+    opacity: 0;
+  }
+}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -156,19 +176,6 @@ article .article-text #article-text-left h3 {
   margin: 20px;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
 }
-.menu-card:hover .menu-text {
-  flex-basis: 75%;
-}
-.menu-card:hover .menu-check {
-  display: block;
-  flex-basis: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu-card:hover .menu-check i {
-  animation: rollInCheck 0.9s ease-out;
-}
 @media screen and (min-width: 768px) {
   .menu-card {
     width: 500px;
@@ -176,8 +183,21 @@ article .article-text #article-text-left h3 {
 }
 @media screen and (min-width: 992px) {
   .menu-card {
-    width: auto;
+    width: 300px;
   }
+}
+.menu-card:hover .menu-text {
+  flex-basis: 75%;
+}
+.menu-card:hover .menu-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  flex-basis: 25%;
+}
+.menu-card:hover .menu-check i {
+  animation: rollInCheck 0.9s ease-out;
 }
 .menu-card .menu-text {
   padding: 15px;
@@ -195,7 +215,7 @@ article .article-text #article-text-left h3 {
 }
 @media screen and (min-width: 992px) {
   .menu-card .menu-text h3 {
-    font-size: 22px;
+    font-size: 18px;
     text-align: left;
   }
 }
@@ -205,7 +225,7 @@ article .article-text #article-text-left h3 {
 }
 @media screen and (min-width: 992px) {
   .menu-card .menu-text .menu-text-detail {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 .menu-card .menu-text .menu-text-detail #content {
@@ -464,26 +484,6 @@ footer a i {
   animation: spin 3s ease-in;
 }
 
-@keyframes loading {
-  0% {
-    z-index: 9999;
-  }
-  100% {
-    z-index: -1;
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(720deg);
-    opacity: 0;
-  }
-}
 #operation {
   padding: 40px 20px;
 }
@@ -618,15 +618,15 @@ main {
 .menu .cart .menu-category {
   margin-bottom: 50px;
 }
-@media screen and (min-width: 992px) {
-  .menu .cart .menu-category {
-    flex-basis: 32%;
-  }
-}
 .menu .cart .menu-category h2 {
   font-size: 24px;
   margin-left: 20px;
   margin-bottom: 5px;
+}
+@media screen and (min-width: 992px) {
+  .menu .cart .menu-category h2 {
+    margin-left: 0;
+  }
 }
 .menu .cart .menu-category hr {
   border: 2px solid #99E2D0;

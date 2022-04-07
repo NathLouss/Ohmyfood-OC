@@ -56,28 +56,28 @@ article {
   background-color: white;
   margin: 20px;
   box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
-  &:hover {
-    .menu-text {
-      flex-basis: 75%;
-    }
-    .menu-check {
-      display: block;
-      flex-basis: 25%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      i {
-        animation: rollInCheck 0.9s ease-out;
-      }
-    }
-  }
   // tablet >> if screen is equal or more then
   @media screen and (min-width: 768px) {
     width: 500px;
   }
   // desktop >> if screen is equal or more then
   @media screen and (min-width: 992px) {
-    width: auto;
+    width: 300px;
+  }
+  &:hover {
+    .menu-text {
+      flex-basis: 75%;
+    }
+    .menu-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: block;
+      flex-basis: 25%;
+      i {
+        animation: rollInCheck 0.9s ease-out;
+      }
+    }
   }
   .menu-text {
     padding: 15px;
@@ -93,7 +93,7 @@ article {
       white-space: nowrap;
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 992px) {
-        font-size: 22px;
+        font-size: 18px;
         text-align: left;
       }
     }
@@ -102,7 +102,7 @@ article {
       justify-content: space-between;
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 992px) {
-        font-size: 18px;
+        font-size: 14px;
       }
       #content {
         overflow: hidden;

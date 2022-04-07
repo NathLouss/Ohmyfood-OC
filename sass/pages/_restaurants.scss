@@ -26,14 +26,18 @@ main {
   }
     .menu-category {
       margin-bottom: 50px;
-      // desktop >> if screen is equal or more then
-      @media screen and (min-width: 992px) {
-        flex-basis: 32%;
-      }
+      // // desktop >> if screen is equal or more then
+      // @media screen and (min-width: 992px) {
+      //   flex-basis: 32%;
+      // }
       h2 {
         font-size: 24px;
         margin-left: 20px;
         margin-bottom: 5px;
+        // desktop >> if screen is equal or more then
+        @media screen and (min-width: 992px) {
+          margin-left: 0;
+        }
       }
       hr {
         border: 2px solid $tertiary;
