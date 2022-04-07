@@ -51,27 +51,5 @@
         margin-right: 30px;
       }
     }
-    .banner-restaurant-heart {
-      position: relative;
-      i {
-        font-size: 30px;
-      }
-      .heart {
-        position: absolute;
-        right: -3px;
-        top: -2px;
-        height: 34px;
-        width: 34px;
-      }
-    }
   }
 }
-
-//out of the implementation, specificity conflict
-#full-heart {
-  opacity: 0;
-  transition: opacity 2s ease 0s;
-  &:hover {
-    opacity: 1;
-  }
-} 

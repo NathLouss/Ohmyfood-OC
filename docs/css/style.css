@@ -74,26 +74,21 @@ article .article-img p {
   padding: 10px 15px;
 }
 article .article-text {
-  position: relative;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
   height: 90px;
   padding: 15px 20px;
 }
-article .article-text i {
-  position: absolute;
-  top: 25px;
-  right: 35px;
-  font-size: 30px;
-  color: #353535;
-}
-article .article-text #article-text-left {
-  position: absolute;
-  left: 20px;
-}
 @media screen and (min-width: 768px) {
   article .article-text #article-text-left {
-    display: flex;
     flex-direction: column;
     row-gap: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  article .article-text #article-text-left {
+    align-items: flex-start;
   }
 }
 article .article-text #article-text-left h3 {
@@ -290,6 +285,28 @@ article .article-text #article-text-left h3 {
   padding: 20px 60px;
 }
 
+.heart {
+  position: relative;
+  width: 31px;
+  height: 31px;
+}
+.heart i {
+  font-size: 30px;
+  color: #353535;
+}
+.heart svg {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  height: 31px;
+  width: 31px;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.heart svg:hover {
+  opacity: 1;
+}
+
 header {
   text-align: center;
   padding: 30px 20px 10px;
@@ -389,27 +406,6 @@ form ::placeholder {
     margin-right: 30px;
   }
 }
-.banner-restaurant .banner-restaurant-title .banner-restaurant-heart {
-  position: relative;
-}
-.banner-restaurant .banner-restaurant-title .banner-restaurant-heart i {
-  font-size: 30px;
-}
-.banner-restaurant .banner-restaurant-title .banner-restaurant-heart .heart {
-  position: absolute;
-  right: -3px;
-  top: -2px;
-  height: 34px;
-  width: 34px;
-}
-
-#full-heart {
-  opacity: 0;
-  transition: opacity 2s ease 0s;
-}
-#full-heart:hover {
-  opacity: 1;
-}
 
 footer {
   background-color: #353535;
@@ -506,14 +502,6 @@ footer a i {
 #functioning {
   padding: 40px 20px;
 }
-@media screen and (min-width: 1600px) {
-  #functioning {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: 80px;
-  }
-}
 #functioning h2 {
   font-weight: 600;
   font-size: 35px;
@@ -609,20 +597,8 @@ footer a i {
 }
 @media screen and (min-width: 992px) {
   #restaurants div a {
-    flex-basis: 30%;
+    flex-basis: 31%;
   }
-}
-#restaurants div a .full-heart {
-  position: absolute;
-  top: 23px;
-  right: 33px;
-  height: 33px;
-  width: 33px;
-  opacity: 0;
-  transition: opacity 2s ease 0s;
-}
-#restaurants div a .full-heart:hover {
-  opacity: 1;
 }
 
 main {
