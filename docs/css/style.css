@@ -456,7 +456,7 @@ footer a i {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  animation: loading 3s ease-in-out forwards;
+  animation: loading 2s ease-in-out forwards;
 }
 .loader-container .loader {
   position: absolute;
@@ -465,7 +465,7 @@ footer a i {
   border: 5px solid transparent;
   border-top-color: #99E2D0;
   border-radius: 50%;
-  animation: spin 3s ease-in forwards;
+  animation: spin 2s ease-in-out forwards;
 }
 .loader-container .loader:before, .loader-container .loader:after {
   content: "";
@@ -479,7 +479,7 @@ footer a i {
   left: -30px;
   right: -30px;
   bottom: -30px;
-  animation: spin 2s ease-in;
+  animation: spin 2s ease-in-out;
 }
 .loader-container .loader:after {
   border-top-color: #9356DC;
@@ -487,7 +487,7 @@ footer a i {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  animation: spin 3s ease-in;
+  animation: spin 2s ease-in-out;
 }
 
 #operation {

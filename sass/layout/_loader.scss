@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  animation: loading 3s ease-in-out forwards;
+  animation: loading 2s ease-in-out forwards;
   .loader {
     position: absolute;
     height: 200px;
@@ -14,7 +14,7 @@
     border: 5px solid transparent;
     border-top-color: $tertiary;
     border-radius: 50%;
-    animation: spin 3s ease-in forwards;
+    animation: spin 2s ease-in-out forwards;
     &:before, 
     &:after {
       content:'';
@@ -28,7 +28,7 @@
       left: -30px;
       right: -30px;
       bottom: -30px;
-      animation: spin 2s ease-in;
+      animation: spin 2s ease-in-out;
     }
     &:after {
       border-top-color: $primary;
@@ -36,7 +36,7 @@
       left: 20px;
       right: 20px;
       bottom: 20px; 
-      animation: spin 3s ease-in; 
+      animation: spin 2s ease-in-out; 
     }
   }
 }
