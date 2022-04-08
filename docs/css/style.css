@@ -207,7 +207,7 @@ article .restaurants-article-text .restaurants-article-text-left h3 {
 }
 @media screen and (min-width: 992px) {
   .menu-article .menu-article-text .menu-article-text-detail {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 .menu-article .menu-article-text .menu-article-text-detail .menu-article-text-detail-content {
@@ -610,6 +610,7 @@ main #menu {
 @media screen and (min-width: 992px) {
   main #menu .menu-cart {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 main #menu .menu-cart .menu-category {
