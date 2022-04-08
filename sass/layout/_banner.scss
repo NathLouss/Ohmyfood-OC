@@ -24,7 +24,7 @@
     // tablet >> if screen is equal or more then
     @media screen and (min-width: 768px) {
       height: 550px;
-      width: -webkit-fill-available;
+      width: 100%;
       object-fit: cover;
     }
   }

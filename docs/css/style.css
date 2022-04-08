@@ -383,7 +383,7 @@ form ::placeholder {
 @media screen and (min-width: 768px) {
   .banner-restaurant img {
     height: 550px;
-    width: -webkit-fill-available;
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -596,11 +596,6 @@ footer a i {
 main {
   background-color: #f6f6f6;
 }
-@media screen and (min-width: 992px) {
-  main {
-    text-align: -webkit-center;
-  }
-}
 
 .menu {
   position: relative;
@@ -618,8 +613,6 @@ main {
 @media screen and (min-width: 992px) {
   .menu .cart {
     flex-direction: row;
-    align-items: flex-start;
-    max-width: 1024px;
   }
 }
 .menu .cart .menu-category {
@@ -633,6 +626,7 @@ main {
 @media screen and (min-width: 992px) {
   .menu .cart .menu-category h2 {
     margin-left: 0;
+    text-align: center;
   }
 }
 .menu .cart .menu-category hr {
@@ -642,7 +636,9 @@ main {
 }
 @media screen and (min-width: 992px) {
   .menu .cart .menu-category hr {
-    margin-left: 0;
+    width: 20%;
+    margin-right: 40%;
+    margin-left: 40%;
   }
 }
 
