@@ -79,15 +79,15 @@ body {
     transform: translateY(0);
   }
 }
-#first-load {
+.first-load {
   animation: fadeInUp 1s ease-in-out 0.8s backwards;
 }
 
-#second-load {
+.second-load {
   animation: fadeInUp 1s ease-in-out 1s backwards;
 }
 
-#third-load {
+.third-load {
   animation: fadeInUp 1s ease-in-out 1.2s backwards;
 }
 
