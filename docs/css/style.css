@@ -386,6 +386,7 @@ form ::placeholder {
 .banner-restaurant .banner-restaurant-title h1 {
   font-size: 40px;
   font-family: "Shrikhand", cursive;
+  letter-spacing: 1px;
 }
 @media screen and (min-width: 768px) {
   .banner-restaurant .banner-restaurant-title h1 {
