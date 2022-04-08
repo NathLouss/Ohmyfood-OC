@@ -1,50 +1,45 @@
 main {
   background-color: $fourth;
-  // // desktop >> if screen is equal or more then
-  // @media screen and (min-width: 992px) {
-  //   text-align: -webkit-center;
-  // }
-}
-
-.menu {
-  position: relative;
-  top: 60px;
-  background-color: $fourth;
-  .cart {
-  // tablet >> if screen is equal or more then
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  // desktop >> if screen is equal or more then
-  @media screen and (min-width: 992px) {
-    flex-direction: row;
-    // align-items: flex-start;
-    // max-width: 1024px;
-  }
-    .menu-category {
-      margin-bottom: 50px;
-      h2 {
-        font-size: 24px;
-        margin-left: 20px;
-        margin-bottom: 5px;
-        // desktop >> if screen is equal or more then
-        @media screen and (min-width: 992px) {
-          margin-left: 0;
-          text-align: center;
+  .menu {
+    position: relative;
+    top: 60px;
+    background-color: $fourth;
+    .cart {
+    // tablet >> if screen is equal or more then
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    // desktop >> if screen is equal or more then
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+      // align-items: flex-start;
+      // max-width: 1024px;
+    }
+      .menu-category {
+        margin-bottom: 50px;
+        h2 {
+          font-size: 24px;
+          margin-left: 20px;
+          margin-bottom: 5px;
+          // desktop >> if screen is equal or more then
+          @media screen and (min-width: 992px) {
+            margin-left: 0;
+            text-align: center;
+          }
         }
-      }
-      hr {
-        border: 2px solid $tertiary;
-        width: 60px;
-        margin-left: 20px;
-        // desktop >> if screen is equal or more then
-        @media screen and (min-width: 992px) {
-          width: 20%;
-          margin-right: 40%;
-          margin-left: 40%;
+        hr {
+          border: 2px solid $tertiary;
+          width: 60px;
+          margin-left: 20px;
+          // desktop >> if screen is equal or more then
+          @media screen and (min-width: 992px) {
+            width: 20%;
+            margin-right: 40%;
+            margin-left: 40%;
+          }
         }
       }
     }

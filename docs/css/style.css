@@ -499,6 +499,11 @@ footer a i {
   font-size: 35px;
   padding-top: 15px;
 }
+@media screen and (min-width: 992px) {
+  #operation h2 {
+    text-align: center;
+  }
+}
 #operation ul {
   display: flex;
   flex-direction: column;
@@ -524,7 +529,7 @@ footer a i {
 }
 @media screen and (min-width: 768px) {
   .step {
-    width: 395px;
+    width: 410px;
   }
 }
 .step:hover {
@@ -564,7 +569,16 @@ footer a i {
 }
 @media screen and (min-width: 992px) {
   #restaurants {
-    max-width: 1024px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #restaurants {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 #restaurants h2 {
@@ -572,6 +586,11 @@ footer a i {
   font-size: 35px;
   padding-top: 15px;
   padding-bottom: 25px;
+}
+@media screen and (min-width: 992px) {
+  #restaurants h2 {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   #restaurants div {
@@ -596,14 +615,13 @@ footer a i {
 main {
   background-color: #f6f6f6;
 }
-
-.menu {
+main .menu {
   position: relative;
   top: 60px;
   background-color: #f6f6f6;
 }
 @media screen and (min-width: 768px) {
-  .menu .cart {
+  main .menu .cart {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -611,31 +629,31 @@ main {
   }
 }
 @media screen and (min-width: 992px) {
-  .menu .cart {
+  main .menu .cart {
     flex-direction: row;
   }
 }
-.menu .cart .menu-category {
+main .menu .cart .menu-category {
   margin-bottom: 50px;
 }
-.menu .cart .menu-category h2 {
+main .menu .cart .menu-category h2 {
   font-size: 24px;
   margin-left: 20px;
   margin-bottom: 5px;
 }
 @media screen and (min-width: 992px) {
-  .menu .cart .menu-category h2 {
+  main .menu .cart .menu-category h2 {
     margin-left: 0;
     text-align: center;
   }
 }
-.menu .cart .menu-category hr {
+main .menu .cart .menu-category hr {
   border: 2px solid #99E2D0;
   width: 60px;
   margin-left: 20px;
 }
 @media screen and (min-width: 992px) {
-  .menu .cart .menu-category hr {
+  main .menu .cart .menu-category hr {
     width: 20%;
     margin-right: 40%;
     margin-left: 40%;

@@ -5,6 +5,10 @@
     font-weight: 600;
     font-size: 35px;
     padding-top: 15px;
+    // desktop >> if screen is equal or more then
+    @media screen and (min-width: 992px) {
+      text-align: center;
+    }
   }
   ul {
     display: flex;
@@ -31,7 +35,7 @@
   position: relative;
   // tablet >> if screen is equal or more then
   @media screen and (min-width: 768px) {
-    width: 395px;
+    width: 410px;
   }
   &:hover {
     background-color: $ninth;
@@ -71,13 +75,24 @@
   background-color: $fourth;
   // desktop >> if screen is equal or more then
   @media screen and (min-width: 992px) {
-    max-width: 1024px;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   h2 {
     font-weight: 600;
     font-size: 35px;
     padding-top: 15px;
     padding-bottom: 25px;
+    // desktop >> if screen is equal or more then
+    @media screen and (min-width: 992px) {
+      text-align: center;
+    }
   }
   div {
     // tablet >> if screen is equal or more then
