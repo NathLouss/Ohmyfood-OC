@@ -15,8 +15,6 @@ main {
     // desktop >> if screen is equal or more then
     @media screen and (min-width: 992px) {
       flex-direction: row;
-      // align-items: flex-start;
-      // max-width: 1024px;
     }
       .menu-category {
         margin-bottom: 50px;

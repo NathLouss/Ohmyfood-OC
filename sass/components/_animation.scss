@@ -1,4 +1,4 @@
-// LOADING WHITE BACKGROUND
+// LOADING BACKGROUND
 @keyframes loading {
   0% {
     z-index: 9999;
@@ -8,7 +8,7 @@
   }
 }
 
-// LOADING SPINER
+// LOADING SPINNER
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -35,39 +35,15 @@
   }
 }
 
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.first-load {
+#first-load {
   animation: fadeInUp 1s ease-in-out 0.8s backwards;
 }
 
-.second-load {
+#second-load {
   animation: fadeInUp 1s ease-in-out 1s backwards;
 }
 
-.third-load {
+#third-load {
   animation: fadeInUp 1s ease-in-out 1.2s backwards;
 }
 
