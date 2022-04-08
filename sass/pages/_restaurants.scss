@@ -1,10 +1,10 @@
 main {
   background-color: $fourth;
-  .menu {
+  #menu {
     position: relative;
     top: 60px;
     background-color: $fourth;
-    .cart {
+    .menu-cart {
     // tablet >> if screen is equal or more then
     @media screen and (min-width: 768px) {
       display: flex;

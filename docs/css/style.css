@@ -127,16 +127,16 @@ article {
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
 }
-article .article-img {
+article .restaurants-article-img {
   position: relative;
   border-radius: 15px 15px 0 0;
 }
-article .article-img img {
+article .restaurants-article-img img {
   height: 250px;
   width: 100%;
   object-fit: cover;
 }
-article .article-img p {
+article .restaurants-article-img p {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -145,7 +145,7 @@ article .article-img p {
   border-radius: 3px;
   padding: 10px 15px;
 }
-article .article-text {
+article .restaurants-article-text {
   display: flex;
   justify-content: space-between !important;
   flex-direction: row;
@@ -154,59 +154,59 @@ article .article-text {
   padding: 15px 20px;
 }
 @media screen and (min-width: 768px) {
-  article .article-text .article-text-left {
+  article .restaurants-article-text .restaurants-article-text-left {
     flex-direction: column !important;
     row-gap: 0 !important;
   }
 }
 @media screen and (min-width: 992px) {
-  article .article-text .article-text-left {
+  article .restaurants-article-text .restaurants-article-text-left {
     align-items: flex-start;
   }
 }
-article .article-text .article-text-left h3 {
+article .restaurants-article-text .restaurants-article-text-left h3 {
   color: black;
   font-size: 25px;
   font-weight: 600;
   padding-bottom: 5px;
 }
 
-.menu-card {
+.menu-article {
   display: flex;
   background-color: white;
   margin: 20px;
   box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.15);
 }
 @media screen and (min-width: 768px) {
-  .menu-card {
+  .menu-article {
     width: 500px;
   }
 }
 @media screen and (min-width: 992px) {
-  .menu-card {
+  .menu-article {
     width: 300px;
   }
 }
-.menu-card:hover .menu-text {
+.menu-article:hover .menu-article-text {
   flex-basis: 75%;
 }
-.menu-card:hover .menu-check {
+.menu-article:hover .menu-article-check {
   display: block;
   flex-basis: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu-card:hover .menu-check i {
+.menu-article:hover .menu-article-check i {
   animation: rollInCheck 0.9s ease-out;
 }
-.menu-card .menu-text {
+.menu-article .menu-article-text {
   padding: 15px;
   flex-basis: 100%;
   overflow: hidden;
   transition: flex-basis 1s;
 }
-.menu-card .menu-text h3 {
+.menu-article .menu-article-text h3 {
   font-size: 26px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -215,35 +215,35 @@ article .article-text .article-text-left h3 {
   white-space: nowrap;
 }
 @media screen and (min-width: 992px) {
-  .menu-card .menu-text h3 {
+  .menu-article .menu-article-text h3 {
     font-size: 18px;
     text-align: left;
     margin-bottom: 5px;
   }
 }
-.menu-card .menu-text .menu-text-detail {
+.menu-article .menu-article-text .menu-article-text-detail {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (min-width: 992px) {
-  .menu-card .menu-text .menu-text-detail {
+  .menu-article .menu-article-text .menu-article-text-detail {
     font-size: 14px;
   }
 }
-.menu-card .menu-text .menu-text-detail .content {
+.menu-article .menu-article-text .menu-article-text-detail .menu-article-text-detail-content {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.menu-card .menu-text .menu-text-detail .price {
+.menu-article .menu-article-text .menu-article-text-detail .menu-article-text-detail-price {
   font-weight: bold;
 }
-.menu-card .menu-check {
+.menu-article .menu-article-check {
   display: none;
   background-color: #99E2D0;
   transition: flex-basis 1s;
 }
-.menu-card .menu-check i {
+.menu-article .menu-article-check i {
   color: white;
   font-size: 36px;
 }
@@ -265,17 +265,6 @@ article .article-text .article-text-left h3 {
 .button a:hover {
   opacity: 0.8;
   box-shadow: 0px 2px 8px 0px black;
-}
-
-.return {
-  text-decoration: none;
-  color: #353535;
-}
-.return i {
-  position: absolute;
-  left: 30px;
-  top: 33px;
-  font-size: 25px;
 }
 
 .button-order {
@@ -322,6 +311,16 @@ header {
   header {
     text-align: initial;
   }
+}
+header .return {
+  text-decoration: none;
+  color: #353535;
+}
+header .return i {
+  position: absolute;
+  left: 30px;
+  top: 33px;
+  font-size: 25px;
 }
 @media screen and (min-width: 768px) {
   header #header-img-restaurant {
@@ -517,7 +516,7 @@ footer a i {
   }
 }
 
-.step {
+.operation-step {
   display: flex;
   align-items: center;
   width: 100%;
@@ -528,17 +527,17 @@ footer a i {
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .step {
+  .operation-step {
     width: 410px;
   }
 }
-.step:hover {
+.operation-step:hover {
   background-color: #f5edff;
 }
-.step:hover i {
+.operation-step:hover i {
   color: #9356DC;
 }
-.step p {
+.operation-step p {
   position: absolute;
   top: 30px;
   left: -10px;
@@ -547,16 +546,16 @@ footer a i {
   padding: 4px 10px;
   border-radius: 50px;
 }
-.step i {
+.operation-step i {
   color: #747474;
   font-size: 24px;
   padding-left: 60px;
   padding-right: 40px;
 }
-.step #step-icone-tall {
+.operation-step #step-icone-tall {
   font-size: 30px;
 }
-.step h3 {
+.operation-step h3 {
   color: black;
   font-size: 22px;
   font-weight: 600;
@@ -615,13 +614,13 @@ footer a i {
 main {
   background-color: #f6f6f6;
 }
-main .menu {
+main #menu {
   position: relative;
   top: 60px;
   background-color: #f6f6f6;
 }
 @media screen and (min-width: 768px) {
-  main .menu .cart {
+  main #menu .menu-cart {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -629,31 +628,31 @@ main .menu {
   }
 }
 @media screen and (min-width: 992px) {
-  main .menu .cart {
+  main #menu .menu-cart {
     flex-direction: row;
   }
 }
-main .menu .cart .menu-category {
+main #menu .menu-cart .menu-category {
   margin-bottom: 50px;
 }
-main .menu .cart .menu-category h2 {
+main #menu .menu-cart .menu-category h2 {
   font-size: 24px;
   margin-left: 20px;
   margin-bottom: 5px;
 }
 @media screen and (min-width: 992px) {
-  main .menu .cart .menu-category h2 {
+  main #menu .menu-cart .menu-category h2 {
     margin-left: 0;
     text-align: center;
   }
 }
-main .menu .cart .menu-category hr {
+main #menu .menu-cart .menu-category hr {
   border: 2px solid #99E2D0;
   width: 60px;
   margin-left: 20px;
 }
 @media screen and (min-width: 992px) {
-  main .menu .cart .menu-category hr {
+  main #menu .menu-cart .menu-category hr {
     width: 20%;
     margin-right: 40%;
     margin-left: 40%;

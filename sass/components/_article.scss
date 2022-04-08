@@ -4,7 +4,7 @@ article {
   overflow: hidden;
   box-shadow: 0px 6px 30px 0px rgb(0 0 0 / 15%);
   margin-bottom: 20px;
-  .article-img {
+  .restaurants-article-img {
     position: relative;
     border-radius: 15px 15px 0 0;
     img {
@@ -22,14 +22,14 @@ article {
       padding: 10px 15px;
     }
   }
-  .article-text {
+  .restaurants-article-text {
     display: flex;
     justify-content: space-between!important;
     flex-direction: row;
     align-items: center;
     height: 90px;
     padding: 15px 20px;
-    .article-text-left {
+    .restaurants-article-text-left {
       // tablet >> if screen is equal or more then
       @media screen and (min-width: 768px) {
         flex-direction: column!important;
@@ -50,7 +50,7 @@ article {
 }
 
 // RESTAURANT PAGE ARTICLE MENU
-.menu-card {
+.menu-article {
   display: flex;
   background-color: white;
   margin: 20px;
@@ -64,10 +64,10 @@ article {
     width: 300px;
   }
   &:hover {
-    .menu-text {
+    .menu-article-text {
       flex-basis: 75%;
     }
-    .menu-check {
+    .menu-article-check {
       display: block;
       flex-basis: 25%;
       display: flex;
@@ -78,7 +78,7 @@ article {
       }
     }
   }
-  .menu-text {
+  .menu-article-text {
     padding: 15px;
     flex-basis: 100%;
     overflow: hidden;
@@ -97,24 +97,24 @@ article {
         margin-bottom: 5px;
       }
     }
-    .menu-text-detail {
+    .menu-article-text-detail {
       display: flex;
       justify-content: space-between;
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 992px) {
         font-size: 14px;
       }
-      .content {
+      .menu-article-text-detail-content {
         overflow: hidden;
         text-overflow: ellipsis; 
         white-space: nowrap;
       }
-      .price {
+      .menu-article-text-detail-price {
         font-weight: bold;
       }
     }
   }        
-  .menu-check {
+  .menu-article-check {
     display: none;
     background-color: $tertiary;
     transition: flex-basis 1s;
