@@ -134,17 +134,17 @@ article .restaurants-article-text {
   padding: 15px 20px;
 }
 @media screen and (min-width: 768px) {
-  article .restaurants-article-text .restaurants-article-text-left {
+  article .restaurants-article-text--left {
     flex-direction: column !important;
     row-gap: 0 !important;
   }
 }
 @media screen and (min-width: 992px) {
-  article .restaurants-article-text .restaurants-article-text-left {
+  article .restaurants-article-text--left {
     align-items: flex-start;
   }
 }
-article .restaurants-article-text .restaurants-article-text-left h3 {
+article .restaurants-article-text--left h3 {
   color: black;
   font-size: 25px;
   font-weight: 600;
