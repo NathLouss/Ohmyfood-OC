@@ -1,7 +1,11 @@
 // LOADING BACKGROUND
 @keyframes loading {
   0% {
+    opacity: 0.95;
     z-index: 9999;
+  }
+  99% {
+    opacity: 0.95;
   }
   100% {
     z-index: -1;
@@ -11,6 +15,7 @@
 // LOADING SPINNER
 @keyframes spin {
   0% {
+    opacity: 1;
     transform: rotate(0deg);
   }
   99% {

@@ -51,7 +51,11 @@ body {
 
 @keyframes loading {
   0% {
+    opacity: 0.95;
     z-index: 9999;
+  }
+  99% {
+    opacity: 0.95;
   }
   100% {
     z-index: -1;
@@ -59,6 +63,7 @@ body {
 }
 @keyframes spin {
   0% {
+    opacity: 1;
     transform: rotate(0deg);
   }
   99% {
@@ -430,13 +435,17 @@ footer a i {
 }
 
 .loader-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   background-color: #ffffff;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   animation: loading 2s ease-in-out forwards;
 }
 .loader-container .loader {
@@ -448,13 +457,13 @@ footer a i {
   border-radius: 50%;
   animation: spin 2s ease-in-out forwards;
 }
-.loader-container .loader:before, .loader-container .loader:after {
+.loader-container .loader::before, .loader-container .loader::after {
   content: "";
   position: absolute;
   border: 5px solid transparent;
   border-radius: 50%;
 }
-.loader-container .loader:before {
+.loader-container .loader::before {
   border-top-color: #FF79DA;
   top: -30px;
   left: -30px;
@@ -462,7 +471,7 @@ footer a i {
   bottom: -30px;
   animation: spin 2s ease-in-out;
 }
-.loader-container .loader:after {
+.loader-container .loader::after {
   border-top-color: #9356DC;
   top: 20px;
   left: 20px;
