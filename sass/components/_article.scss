@@ -64,10 +64,10 @@ article {
     width: 300px;
   }
   &:hover {
-    .menu-article-text {
+    & .menu-article__text {
       flex-basis: 75%;
     }
-    .menu-article-check {
+    & .menu-article__check {
       display: block;
       flex-basis: 25%;
       display: flex;
@@ -78,7 +78,7 @@ article {
       }
     }
   }
-  .menu-article-text {
+  &__text {
     padding: 15px;
     flex-basis: 100%;
     overflow: hidden;
@@ -97,24 +97,24 @@ article {
         margin-bottom: 5px;
       }
     }
-    .menu-article-text-detail {
+    div {
       display: flex;
       justify-content: space-between;
       // desktop >> if screen is equal or more then
       @media screen and (min-width: 992px) {
         font-size: 13px;
       }
-      .menu-article-text-detail-content {
+      .content {
         overflow: hidden;
         text-overflow: ellipsis; 
         white-space: nowrap;
       }
-      .menu-article-text-detail-price {
+      .price {
         font-weight: bold;
       }
     }
   }        
-  .menu-article-check {
+  &__check {
     display: none;
     background-color: $tertiary;
     transition: flex-basis 1s;
