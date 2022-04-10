@@ -201,7 +201,7 @@ article .restaurants-article-text--left h3 {
 }
 @media screen and (min-width: 992px) {
   .menu-article__text h3 {
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
     margin-bottom: 5px;
   }
@@ -371,7 +371,7 @@ form ::placeholder {
     object-fit: cover;
   }
 }
-.banner-restaurant .banner-restaurant-title {
+.banner-restaurant .banner-restaurant__title {
   position: absolute;
   z-index: 2;
   bottom: -60px;
@@ -384,17 +384,17 @@ form ::placeholder {
   padding: 30px;
 }
 @media screen and (min-width: 768px) {
-  .banner-restaurant .banner-restaurant-title {
+  .banner-restaurant .banner-restaurant__title {
     justify-content: center;
   }
 }
-.banner-restaurant .banner-restaurant-title h1 {
+.banner-restaurant .banner-restaurant__title h1 {
   font-size: 40px;
   font-family: "Shrikhand", cursive;
   letter-spacing: 1px;
 }
 @media screen and (min-width: 768px) {
-  .banner-restaurant .banner-restaurant-title h1 {
+  .banner-restaurant .banner-restaurant__title h1 {
     margin-right: 30px;
   }
 }
@@ -637,13 +637,15 @@ main #menu .menu-cart .menu-category h2 {
     text-align: center;
   }
 }
-main #menu .menu-cart .menu-category hr {
+main #menu .menu-cart .menu-category h2::after {
+  content: "";
+  display: block;
   border: 2px solid #99E2D0;
   width: 60px;
-  margin-left: 20px;
+  margin-top: 5px;
 }
 @media screen and (min-width: 992px) {
-  main #menu .menu-cart .menu-category hr {
+  main #menu .menu-cart .menu-category h2::after {
     width: 20%;
     margin-right: 40%;
     margin-left: 40%;
