@@ -412,7 +412,7 @@ footer h4 {
 footer li {
   padding-bottom: 10px;
 }
-footer a {
+footer li a {
   display: flex;
   align-items: center;
   column-gap: 15px;
@@ -421,11 +421,11 @@ footer a {
   font-size: 24px;
 }
 @media screen and (min-width: 992px) {
-  footer a {
+  footer li a {
     font-size: 16px;
   }
 }
-footer a i {
+footer li a i {
   font-size: 18px;
 }
 
