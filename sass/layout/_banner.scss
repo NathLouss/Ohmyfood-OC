@@ -14,6 +14,10 @@
     font-size: 25px;
     color: $eighth;
     padding: 0 35px 50px;
+    // tablet >> if screen is equal or more then
+    @media screen and (min-width: 768px) {
+      padding: 0 100px 50px;
+    }
   }
 }
 

@@ -25,6 +25,7 @@
       position: absolute;
       border: 5px solid transparent;
       border-radius: 50%;
+      animation: spin 2s ease-in-out;
     }
     &::before {
       border-top-color: $secondary;
@@ -32,7 +33,6 @@
       left: -30px;
       right: -30px;
       bottom: -30px;
-      animation: spin 2s ease-in-out;
     }
     &::after {
       border-top-color: $primary;
@@ -40,7 +40,6 @@
       left: 20px;
       right: 20px;
       bottom: 20px; 
-      animation: spin 2s ease-in-out; 
     }
   }
 }
