@@ -1,7 +1,7 @@
 .heart { 
   position: relative;
-  width: 31px;
-  height: 31px;
+  width: 32px;
+  height: 32px;
   i {
     font-size: 30px;
     color: $seventh;
@@ -10,8 +10,8 @@
     position: absolute;
     top: -1px;
     right: 0;
-    height: 31px;
-    width: 31px;
+    height: 32px;
+    width: 32px;
     opacity: 0;
     transition: opacity 2s ease;
     &:hover {
